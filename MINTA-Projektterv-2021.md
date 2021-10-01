@@ -2,11 +2,19 @@
 
 ## 1. Összefoglaló 
 
-`A szállítmányozás lényege, hogy a küldemény a lehető legkisebb költséggel, legbiztonságosabban, a megfelelő időben optimálisan jusson el a rendeltetési helyre. Ez megköveteli az online is elérhető nyilvántartást, épp ezért ennek a projektnek a célja, hogy a szállítmányozással foglalkozó cégek számára egy webalkalmazást fejlesszünk. Az oldal lehetővé teszi tetszőleges árukészlet nyilvántartását, amelyek akár több raktárban, szétszorva vannak tárolva. Ezenkívül az árumozgatás online nyilvántartására is alkalmas lesz az elkészült weboldal. Mindezen funkciókat egy letisztult felületen keresztül tudja elérni a felhasználó.`
-
+A szállítmányozás lényege, hogy a küldemény a lehető legkisebb költséggel, legbiztonságosabban, a megfelelő időben optimálisan jusson el a rendeltetési helyre.
+ Ez megköveteli az online is elérhető nyilvántartást, épp ezért ennek a projektnek a célja, hogy a szállítmányozással foglalkozó cégek számára egy webalkalmazást fejlesszünk.
+ Az oldal lehetővé teszi tetszőleges árukészlet nyilvántartását, amelyek akár több raktárban, szétszorva vannak tárolva. Ezenkívül az árumozgatás online nyilvántartására is alkalmas lesz az elkészült weboldal.
+ Mindezen funkciókat egy letisztult felületen keresztül tudja elérni a felhasználó.
+ 
+ Egy webshop ebben a pandémiás időszakban elengethetetlen. Egy-egy nagy áruház ha rendelkezik webshoppal képes a polcokon lévő termékeket akár percek alatt, vagy akár egy előre egyeztetett időpontra az otthonunk ajtajába kiszállítani. 
+ Azonban minden egy átlátható, felhasználóbarát felületnek kell lennie, hogy az egyszerű vásárló is kényelmesen el tudjon rajta igazodni. Egy helyen megtalálható az összes termék és egyben leírásuk, különböző akciók, promóciók.
+ Egy gyors regisztrációt követve képesek vagyunk saját kosarunk megtekintésére, termékek kiválasztására, majd a fizetés és szállítás meghatározására. Több üzlet közül ki tudjuk választani a nekünk legszimpatikusabbat, majd akár házhoz rendelni, vagy az üzletnél át tudjuk venni a termékeket.
+ Gyors, egyszerű. és akár a kanapéról el lehet végezni a heti teljeskörű bevásárlást, ha rendelkezésre áll egy megfelelően előállított webshop. 
+ 
 ```
 Ide írd le tömören (4-6 mondatban), hogy miről szól a projekt, amit a gyakorlatvezetőtől kaptatok. 
-Írd le, hogy mik a fő célok, miért van a weboldalra szükség. 
+Írd le, hogy mik a fő célok, miért van a weboldalra szükség. űű
 A dokumentumban a pirossal illetve a blokkokkal kiemelt szövegeknek két jelentése van: 
 (a) minta/sablon szöveg, amit le kell cserélni, pl. gyakorlatvezető neve; 
 (b) segítő/magyarázó szöveg. 
