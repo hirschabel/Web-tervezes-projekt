@@ -15,6 +15,8 @@
 
 
 
+Státusz osztályozás:
+ - Tervezet: befejezetlen dokumentum, a mérföldkő leadása előtti napokban
  - Előterjesztés: a projekt menedzser bírálatával, a mérföldkő határidejekor
  - Elfogadott: a megrendelő által elfogadva, a prezentáció bemutatásakor
 
@@ -88,7 +90,7 @@ A projekt a következő emberekből áll:
 | Felelősségek: Projekt menedzser, `Adatbázis és adatkapcsolatok`, `A rendszer működési logikája`, `Prezentációk`   | Hirsch Ábel  | h045844@stud.u-szeged.hu |
 | Felelősségek: `Felhasználói felületek`, `Dokumentáció`                                                            | Pető Patrik    | h050368@stud.u-szeged.hu |
 | `Projekt tag`                                                                                                     | Honti Szabolcs      | h045923@stud.u-szeged.hu |
-|																													| Tóth János 		  | h985829@stud.u-szeged.hu |
+|																													| Tóth János 		  | h985829@stud.u-szeged.hu 
 
 ## 6. A munka feltételei
 
@@ -139,17 +141,11 @@ A munkát Hirsch Ábel koordinálja. Fő feladata, hogy a programozók által j�
  - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
  - `Érintett témák: A projektben használt technológiák, a dokumentáció felépítése, szerepkörök kiosztása, dokumentáció kisebb részekre felosztása`
 
-`3. Megbeszélés:`
- - `Időpont: 2021.09.29.`
- - `Hely: TIK – Szeged, Ady tér 10.`
- - `Résztvevők: Teszt Elek, Remek Elek`
- - `Érintett témák: Funkcionális és nem funkcionális követelmények megbeszélése, UML és adatbázis tervek kiosztása`
-
-```
-A memókat ebben a dokumentumban kell vezetni a teljes projekt során, amely tartalmazza a következőket: 
-jelenlévők listája, megbeszélés helye és ideje, megbeszélt tevékenységek, felmerült kérdések és igények. 
-	Lényege, hogy betekintést kapjunk hogyan szerveződnek, zajlanak a csoportgyűlések.
-```
+1. megbeszélés:
+ - Időpont: 2021.10.01.
+ - Hely: Online
+ - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
+ - Érintett témák: Projektterv megkezdése
 
 ### 7.3. Minőségbiztosítás
 
