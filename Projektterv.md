@@ -11,24 +11,13 @@
 
 | Verzió | Szerző(k)                | Dátum        | Státusz         | Megjegyzés                                                    |
 |--------|--------------------------|--------------|-----------------|---------------------------------------------------------------|
-| 0.1  | Teszt Elek             | `2021-09-26` | `Tervezet`      | `Legelső verzió`                                              |
-| `0.2`  | `Remek Elek, Teszt Elek` | `2021-10-04` | `Előterjesztés` | `A projekt menedzsere jónak találta`                          |
+|  0.1   |  Tóth János              |  2021-10-01  |  Tervezet       |  Legelső verzió                                               |
 
 
 Státusz osztályozás:
  - Tervezet: befejezetlen dokumentum, a mérföldkő leadása előtti napokban
  - Előterjesztés: a projekt menedzser bírálatával, a mérföldkő határidejekor
  - Elfogadott: a megrendelő által elfogadva, a prezentáció bemutatásakor
-
-```
-A leadott projekttervet véglegesnek kell tekinteni. 
-Mindazonáltal indokolt esetben ettől el lehet térni, amennyiben a gyakorlatvezető engedélyezi.
-A fő változtatásokat itt kell vezetni a projekt teljes ideje alatt (jelenlegi példánkban most lett vége a 2. mérföldkőnek). 
-Általánosságban elmondható, hogy az első 2 mérföldkő során gyakoribb a változtatás, így legalább 
-3 fő verziót érdemes megjelölni (Tervezet-Előterjesztés-Elfogadott).
-A verzió számozásának következetesnek kell lennie. A szerzőknél azoknak a nevét kell felsorolni, akik hozzájárultak a fő verzióhoz,
-azaz nem feltétlen mindenki, aki módosította a dokumentumot pl. egy elírás javításával. 
-```
 
 ## 3. A projekt bemutatása
 
