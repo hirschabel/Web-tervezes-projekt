@@ -19,6 +19,7 @@
 | `2.1`  | `Remek Elek`             | `2021-10-25` | `Elfogadott`    | `Leírások pontosítása a megjegyzések alapján`                 |
 
 
+
 Státusz osztályozás:
  - Tervezet: befejezetlen dokumentum, a mérföldkő leadása előtti napokban
  - Előterjesztés: a projekt menedzser bírálatával, a mérföldkő határidejekor
@@ -83,34 +84,28 @@ milyen megjelenéssel kell rendelkeznie.
 
 ## 4. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen kb. `22` személynap/fő.
+Az erőforrásigényünk összesen kb. 22 személynap/fő.
 
-A rendelkezésünkre áll összesen `3 * 70 = 210` pont.
-
-```
-Becsült sarokszámok, a rendelkezésre álló erőforrás fejenként általában 17-25 személynap, 
-a pontok száma = fejenként a projektre kapható maxpont * tagok száma.
-```
+A rendelkezésünkre áll összesen 4 * 70 = 280 pont.
 
 ## 5. Szervezeti felépítés és felelősségmegosztás
-A projekt megrendelője `Márkus András`. A `Szállítmányozás` projektet a projektcsapat fogja végrehajtani, amely `jelenleg három fejlesztőből áll. A csapatban található tapasztalt és pályakezdő webprogramozó is, A tapasztalt projekttagok több éve dolgoznak az iparban, számos sikeres projektten vannak túl.`
- - `Teszt Elek (3 év tapasztalat)`
- - `Remek Elek (3 év tapasztalat)`
- - `Lev Elek (<1 év tapasztalatő)`
+A projekt megrendelője Márkus András. A Webshop projektet a projektcsapat fogja végrehajtani, amely jelenleg n fejlesztőből áll. A csapatban található négy munktapasztalat nélküli szoftverfejlesztő.
+ - Hirsch Ábel
+ - Pető Patrik
+ - Honti Szabolcs
+ - Tóth János
 
-```
-Itt lehet részletezni pl. a tagok szakmai tapasztalatait, vagy akár a releváns gyakorlati helyeket, munkahelyeket megemlíteni (4-6 mondatban).
-```
 
 ### 5.1 Projektcsapat
 A projekt a következő emberekből áll:
 
 |                                                                                                                   | Név             | E-mail cím (stud-os)       |
 |-------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------|
-| Megrendelő                                                                                                        | `Márkus András` | `markusa@inf.u-szeged.hu`  |
-| Felelősségek: Projekt menedzser, `Adatbázis és adatkapcsolatok`, `A rendszer működési logikája`, `Prezentációk` | `Teszt Elek`    | `h123456@stud.u-szeged.hu` |
-| Felelősségek: `Felhasználói felületek`, `Dokumentáció`                                                            | `Remek Elek`    | `h654321@stud.u-szeged.hu` |
-| `Projekt tag`                                                                                                     | `Lev Elek`      | `h000000@stud.u-szeged.hu` |
+| Megrendelő                                                                                                        | Márkus András | markusa@inf.u-szeged.hu  |
+| Felelősségek: Projekt menedzser, `Adatbázis és adatkapcsolatok`, `A rendszer működési logikája`, `Prezentációk`   | Hirsch Ábel  | h045844@stud.u-szeged.hu |
+| Felelősségek: `Felhasználói felületek`, `Dokumentáció`                                                            | Pető Patrik    | h050368@stud.u-szeged.hu |
+| `Projekt tag`                                                                                                     | Honti Szabolcs      | h045923@stud.u-szeged.hu |
+|																													| Tóth János 		  | h985829@stud.u-szeged.hu |
 
 ```
 Nem csak az adott egység felelősének feladata az adott részegység elkészítése, pl. a mérföldkövekhez tartozó prezentációt 
@@ -121,23 +116,22 @@ mindenki szerkesztheti, de elvárható, hogy a prezentációért felelős tag ad
 
 ### 6.1. Munkakörnyezet
 A projekt a következő munkaállomásokat fogja használni a munka során:
- - `Munkaállomások: 3 db PC Windows 10-es operációs rendszerrel`
- - `Dell Inspiron 5558 laptop (CPU: i5 5200U, RAM: 8 GB, GPU: Nvidia 920M)`
- - `Acer Aspire 573g laptop (CPU: i3 5005U, RAM: 4 GB, GPU: Nvidia 920M)`
- - `Asztali számítógép (CPU: i7 7700k, RAM: 16GB, GPU: Nvidia GTX1070)`
+ - Munkaállomások: 4 db PC Windows 10-es operációs rendszerrel
+ - Asztali számítógép (CPU: Ryzen 5 5600x, RAM: 16GB, GPU: Nvidia GTX750)
+ - Asus FX504GD (CPU: i5 8300H RAM: 8GB, GPU: Nvidia GTX1050)
+ - Lenovo Ideapad S145 laptop (CPU: i5 - 1035G1, RAM: 8GB, GPU: Intel UHD Graphics)
+ - Asztali számítógép (CPU: i5 9600K, RAM: 16GB, GPU: Nvidia GTX1660TI)
 
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
- - `Heroku platformszolgáltatás`
- - `Heroku által biztosított PostgreSQL adatbázisszerver`
- - `Spring Boot (backend)`
- - `React.js (frontend)`
- - `Maven szoftverprojekt menedzselő szoftver`
- - `Eclipse IDE`
- - `Git verziókövető (GitLab)`
+ - Heroku platformszolgáltatás
+ - Heroku által biztosított PostgreSQL adatbázisszerver
+ - Spring Boot (backend)
+ - React.js (frontend)
+ - Maven szoftverprojekt menedzselő szoftver
+ - Eclipse IDE
+ - Visual Studio Code
+ - Git verziókövető (GitLab)
 
-```
-Milyen gépet használnak a projekttagok, milyen OS-t használnak, milyen szoftverkörnyezetben, stb.
-```
 
 ### 6.2. Rizikómenedzsment
 
