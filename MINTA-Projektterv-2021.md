@@ -1,4 +1,4 @@
-# `Szallítmányozás` Projektterv 2021
+# Webshop Projektterv 2021
 
 ## 1. Összefoglaló 
 
