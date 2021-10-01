@@ -142,31 +142,14 @@ A munkát `Teszt Elek` koordinálja. `Fő feladata, hogy folyamatosan egyeztesse
 
 ### 7.2. Csoportgyűlések
 
-`A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problémáit, illetve hogy megbeszéljék a következő hét feladatait. A megbeszélésről minden esetben memó készül.`
+A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problémáit, illetve hogy megbeszéljék a következő hét feladatait. A megbeszélésről minden esetben memó készül.
 
-`1. megbeszélés:`
- - `Időpont: 2021.09.15.`
- - `Hely: SZTE Irinyi épület - Szeged, Tisza Lajos krt. 103`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: Ismerkedés, projekttéma kiválasztása`
+1. megbeszélés:
+ - Időpont: 2021.10.01.
+ - Hely: Online
+ - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
+ - Érintett témák: Projektterv megkezdése
 
-`2. megbeszélés:`
- - `Időpont: 2021.09.22.`
- - `Hely: Pivovár - Szeged, Vitéz utca 26.`
- - `Résztvevők: Teszt Elek, Remek Elek, Lev Elek`
- - `Érintett témák: A projektben használt technológiák, a dokumentáció felépítése, szerepkörök kiosztása, dokumentáció kisebb részekre felosztása`
-
-`3. Megbeszélés:`
- - `Időpont: 2021.09.29.`
- - `Hely: TIK – Szeged, Ady tér 10.`
- - `Résztvevők: Teszt Elek, Remek Elek`
- - `Érintett témák: Funkcionális és nem funkcionális követelmények megbeszélése, UML és adatbázis tervek kiosztása`
-
-```
-A memókat ebben a dokumentumban kell vezetni a teljes projekt során, amely tartalmazza a következőket: 
-jelenlévők listája, megbeszélés helye és ideje, megbeszélt tevékenységek, felmerült kérdések és igények. 
-	Lényege, hogy betekintést kapjunk hogyan szerveződnek, zajlanak a csoportgyűlések.
-```
 
 ### 7.3. Minőségbiztosítás
 
