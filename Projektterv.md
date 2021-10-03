@@ -30,20 +30,13 @@ A rendszernek képesnek kell lennie arra, hogy adott felhasználó adatait és a
 
 ### 3.2. Funkcionális követelmények
 
- - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel (admin, raktáros, sofőr)`
- - `Felhasználók kezelése (CRUD)`
- - `Raktárak kezelése (CRUD)`
- - `Árukészletek kezelése (CRUD)`
- - `Járművek kezelése (CRUD)`
- - `Fuvarok/szállítmányok kezelése (CRUD)`
- - `Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
- - `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
- - `Kapcsolatfelvételi űrlap biztosítása új cégek számára`
- - `Biztonsági mentés automatikus létrehozása`
- 
-```
-Ide kerülnek a rendszerrel szemben támasztott funkcionális igények: azaz amit a rendszernek tudnia kell.
-```
+ - Felhasználói munkamenet megvalósítása több jogosultsági szinttel (admin, user, guest)
+ - Felhasználók kezelése (CRUD)
+ - Termékek kezelése (CRUD)
+ - Kosár kezelése (CRUD)
+ - Email-es kiértesítés új rendeléskor
+ - Biztonsági mentés automatikus létrehozása
+ - Termékek keresése/szűrése
 
 ### 3.3. Nem funkcionális követelmények
 
