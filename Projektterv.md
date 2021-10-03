@@ -52,15 +52,10 @@ Ide kerülnek a rendszerrel szemben támasztott funkcionális igények: azaz ami
 
 ### 3.3. Nem funkcionális követelmények
 
- - `A kliens oldal platform- és böngészőfüggetlen legyen`
- - `Reszponzív megjelenés`
- - `Szenzitív adatokat biztonságosan tároljuk`
- - `A legfrissebb technológiákat használja a rendszer`
-
-```
-A rendszer nem funkcionális követelményei, pl.: milyen környezetben fusson, milyen teljesítményt kell produkálnia, 
-milyen megjelenéssel kell rendelkeznie.
-```
+ - A kliens oldal platform- és böngészőfüggetlen legyen
+ - Reszponzív megjelenés
+ - Szenzitív adatokat biztonságosan tároljuk
+ - A legfrissebb technológiákat használja a rendszer
 
 ## 4. Költség- és erőforrás-szükségletek
 
@@ -130,8 +125,8 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
  - Érintett témák: Projektterv megkezdése
 
-1. megbeszélés:
- - Időpont: 2021.10.01.
+2. megbeszélés:
+ - Időpont: 2021.10.03.
  - Hely: Online
  - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
  - Érintett témák: Projektterv kitöltésének folytatása
