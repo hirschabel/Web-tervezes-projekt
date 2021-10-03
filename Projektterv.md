@@ -30,20 +30,13 @@ A rendszernek képesnek kell lennie arra, hogy adott felhasználó adatait és a
 
 ### 3.2. Funkcionális követelmények
 
- - `Felhasználói munkamenet megvalósítása több jogosultsági szinttel (admin, raktáros, sofőr)`
- - `Felhasználók kezelése (CRUD)`
- - `Raktárak kezelése (CRUD)`
- - `Árukészletek kezelése (CRUD)`
- - `Járművek kezelése (CRUD)`
- - `Fuvarok/szállítmányok kezelése (CRUD)`
- - `Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
- - `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
- - `Kapcsolatfelvételi űrlap biztosítása új cégek számára`
- - `Biztonsági mentés automatikus létrehozása`
- 
-```
-Ide kerülnek a rendszerrel szemben támasztott funkcionális igények: azaz amit a rendszernek tudnia kell.
-```
+ - Felhasználói munkamenet megvalósítása több jogosultsági szinttel (admin, user, guest)
+ - Felhasználók kezelése (CRUD)
+ - Termékek kezelése (CRUD)
+ - Kosár kezelése (CRUD)
+ - Email-es kiértesítés új rendeléskor
+ - Biztonsági mentés automatikus létrehozása
+ - Termékek keresése/szűrése
 
 ### 3.3. Nem funkcionális követelmények
 
@@ -148,14 +141,9 @@ Minden leadásnál a projektmenedzser jelentést tesz a projekt haladásáról, 
 
 ### 8.1. Tervezett szoftverfolyamat modell és architektúra
 
-`A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk. A fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikcióra. A fejlesztés során a szoftver specifikációi rugalmasan vátozhatnak, és ezzel a módszertannal tudunk a leggyorsabban alkalmazkodni az új elvárásokhoz.`
+A szoftver fejlesztése során az agilis fejlesztési modellt alkalmazzuk. A fejlesztés során nagy hangsúlyt fektetünk a folyamatos kommunikcióra. A fejlesztés során a szoftver specifikációi rugalmasan vátozhatnak, és ezzel a módszertannal tudunk a leggyorsabban alkalmazkodni az új elvárásokhoz.
 
-`A szoftver MVC alapú REST webszolgáltatásként működik. A szerver és a kliens függetlenek, csupán API végpontok segítségével kommunikálnak.`
-
-```
-Milyen szoftverfolyamat modellt követve állítja elő a csapat a specifikációnak megfelelő prototípusokat? Miért ezt választja? 
-A csapat milyen architektúrát választ a projekt megvalósításához? Milyen rétegek (logikai, adat, GUI) lesznek?`
-```
+A szoftver MVC alapú REST webszolgáltatásként működik. A szerver és a kliens függetlenek, csupán API végpontok segítségével kommunikálnak.
 
 ### 8.2. Átadandók és határidők
 A főbb átadandók és határidők a projekt időtartama alatt a következők:
@@ -164,9 +152,9 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 | Szállítandó |                 Neve                |   Határideje  |
 |:-----------:|:-----------------------------------:|:-------------:|
 |      D1     |       Projektterv és útmutató       | 2021-10-07  |
-|    P1+D2    | UML, DB, képernyőtervek és bemutató | 2021-10-25  |
-|    P1+D3    |      Prototípus I. és bemutató      | 2021-11-15  |
-|    P2+D4    |      Prototípus II. és bemutató     | 2021-11-29  |
+|    P1+D2    | UML, DB, képernyőtervek és bemutató | 2021-10-21  |
+|    P1+D3    |      Prototípus I. és bemutató      | 2021-11-11  |
+|    P2+D4    |      Prototípus II. és bemutató     | 2021-12-02  |
 
 ## 9. Feladatlista
 
