@@ -26,12 +26,7 @@ Ez a projektterv a Webshop projektet mutatja be, mely 2021-10-02-től 2021-11-29
 
 ### 3.1. Rendszerspecifikáció
 
-`A rendszernek képesnek kell lennie arra, hogy adott cég raktárait illetve a raktárak állapotát (telítettség, fizikai pozíció, speciális tulajdonság pl. veszélyes anyag tárolása) nyilvántartsa. Ezenkívül a szállítmányozó cég alkalmazásában álló sofőröket, illetve azok kamionjait is kezelnie kell. A kamionok aktuális és korábbi szállítmányait ki tudjuk listázni. Minden funkció a megfelelő felhasználói jogosultság mellett használható, annak függvényében írható, olvasható vagy nem megtekinthető az adat.`
-
-```
-Ide írd le részletesen, hogy mit fog tudni a rendszer (4-6 mondatban), amit a projekt keretében kerül megvalósításra. 
-Mik a megrendelő és a felhasználók igényei? Miért van szükség a projektre?
-```
+A rendszernek képesnek kell lennie arra, hogy adott felhasználó adatait és a rendeléseket nyilvántartsa. Ezen kívül a termékek állapotára és a felhasználói jogosultságok kezelésére is. A termékeket lehet szűrni, keresni. A jelenlegi kosár tartalma módosítható és nyomon követhető. A rendelést bejelentkezés után lehet végrehajtani. Minden funkció a megfelelő felhasználói jogosultság mellett használható, annak függvényében megváltoztatható, olvasható vagy nem megtekinthető az adat.
 
 ### 3.2. Funkcionális követelmények
 
