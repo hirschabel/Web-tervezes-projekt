@@ -369,7 +369,7 @@ Részfeladatai a következők:
 
 #### 9.4.1. Javított minőségű prototípus új funkciókkal
 
-Felelős: `Teszt Elek`
+Felelős: Tóth János
 
 Tartam:  5 nap
 
@@ -377,7 +377,7 @@ Erőforrásigény:  1 személynap
 
 #### 9.4.2. Javított minőségű prototípus javított funkciókkal
 
-Felelős: `Lev Elek`
+Felelős: Tóth János
 
 Tartam:  5 nap
 
@@ -385,7 +385,7 @@ Erőforrásigény:  2 személynap
 
 #### 9.4.3. Javított minőségű prototípus a korábbi hiányzó funkciókkal
 
-Felelős: `Remek Elek`
+Felelős: Honti Szabolcs
 
 Tartam:  5 nap
 
@@ -393,7 +393,7 @@ Erőforrásigény:  2 személynap
 
 #### 9.4.4. Felhasználói munkamenet tesztelése (TP, TC, TR)
 
-Felelős: `Teszt Elek`
+Felelős: Honti Szabolcs
 
 Tartam:  1 nap
 
@@ -401,7 +401,7 @@ Erőforrásigény:  0.3 személynap
 
 #### 9.4.5. Felhasználói adatmódosítás tesztelése (TP, TC, TR)
 
-Felelős: `Teszt Elek`
+Felelős: Honti Szabolcs
 
 Tartam:  1 nap
 
@@ -409,7 +409,7 @@ Erőforrásigény:  0.3 személynap
 
 #### 9.4.6. Termékek kezelésének tesztelése (TP, TC, TR)
 
-Felelős: `Remek Elek`
+Felelős: Hirsch Ábel
 
 Tartam:  1 nap
 
@@ -417,7 +417,7 @@ Erőforrásigény:  0.3 személynap
 
 #### 9.4.7. Kosár kezelésének tesztelése (TP, TC, TR)
 
-Felelős: `Teszt Elek`
+Felelős: Hirsch Ábel
 
 Tartam:  1 nap
 
@@ -425,7 +425,7 @@ Erőforrásigény:  0.3 személynap
 
 #### 9.4.8. Fizetés kezelésének tesztelése (TP, TC, TR)
 
-Felelős: `Remek Elek`
+Felelős: Hirsch Ábel
 
 Tartam:  1 nap
 
@@ -433,7 +433,7 @@ Erőforrásigény:  0.3 személynap
 
 #### 9.4.9. Email-es funkciók tesztelése (TP, TC, TR)
 
-Felelős: `Remek Elek`
+Felelős: Pető Patrik
 
 Tartam:  1 nap
 
@@ -441,7 +441,7 @@ Erőforrásigény:  0.3 személynap
 
 #### 9.4.12. Biztonsági mentés tesztelése (TP, TC, TR)
 
-Felelős: `Lev Elek`
+Felelős: Pető Patrik
 
 Tartam:  1 nap
 
@@ -449,7 +449,7 @@ Erőforrásigény:  0.3 személynap
 
 #### 9.4.13. Bemutató elkészítése 
 
-Felelős: `Teszt Elek`
+Felelős: Hirsch Ábel
 
 Tartam:  1 nap
 
@@ -468,29 +468,29 @@ Erőforrásigény:  1 személynap
 
 |                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     Honti Szabolcs         |            1           |             `3`            |           `16`          |            `4`           |    `25`   |
-|                     Hirsch Ábel            |            1           |              2             |           `13`          |            `4`           |    `22`   |
-|                     Pető Patrik            |            2           |             `3`            |           `12`          |            `4`           |    `20`   |
-|                     Tóth János             |            1           |             `3`            |           `12`          |            `4`           |    `20`   |
+|                     Honti Szabolcs         |            1           |              1             |            6            |            0.6           |    8.6    |
+|                     Hirsch Ábel            |            1           |              2             |            7            |            1.9           |    11.9   |
+|                     Pető Patrik            |            2           |              5             |            8            |            2.6           |    17.6   |
+|                     Tóth János             |            1           |              4             |            3            |             3            |    11     |
 
 
 ### 11.2. Részletes feladatszámok
 
 |                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     Honti Szabolcs         |           `2`          |             `3`            |           `9`           |            `6`           |    `20`   |
-|                     Hirsch Ábel            |           `1`          |             `2`            |           `7`           |            `5`           |    `15`   |
-|                     Pető Patrik            |           `1`          |             `2`            |           `8`           |            `5`           |    `16`   |
-|                     Tóth János             |           `1`          |             `2`            |           `8`           |            `5`           |    `16`   |
+|                     Honti Szabolcs         |            1           |              1             |            4            |             3            |      9    |
+|                     Hirsch Ábel            |            1           |              2             |            4            |             4            |     11    |
+|                     Pető Patrik            |            2           |              2             |            5            |             2            |     11    |
+|                     Tóth János             |            1           |              2             |            3            |             2            |      8    |
 
 ### 11.3. Részletes költségvetés
 
 |                     Név                       | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:---------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
 |        Maximálisan választható pontszám %-ban |         10% (7)        |            30% (21)        |          50% (35)       |          30% (21)        | 100% (70) |
-|                     Honti Szabolcs            |           4            |             00             |          00             |            00            |    00     |
-|                     Hirsch Ábel               |           6            |             00             |          00             |            00            |    00     |
-|                     Pető Patrik               |           5            |             00             |          00             |            00            |    00     |
-|                     Tóth János                |           6            |             00             |          00             |            00            |    00     |
+|                     Honti Szabolcs            |           5            |             13             |          33             |            19            |    00     |
+|                     Hirsch Ábel               |           6            |             15             |          33             |            16            |    00     |
+|                     Pető Patrik               |           5            |             21             |          35             |             9            |    00     |
+|                     Tóth János                |           6            |             19             |          24             |            21            |    00     |
 
 Szeged, 2021-10-06.
