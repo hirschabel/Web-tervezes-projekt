@@ -254,6 +254,7 @@ Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, 
 
 Részfeladatai a következők:
 
+
 #### 9.3.1.  Felhasználói munkamenet üzleti logikája több jogosultsági szinttel (admin, user, guest)
 
 Felelős: `Teszt Elek`
@@ -312,7 +313,7 @@ Erőforrásigény:  2 személynap
 
 #### 9.3.8.  Kosár kezeléshez kapcsolódó GUI megvalósítása
 
-Felelős: `Remek Elek `
+Felelős: `Remek Elek`
 
 Tartam:  4 nap
 
@@ -402,9 +403,9 @@ Erőforrásigény:  0.3 személynap
 
 Felelős: `Teszt Elek`
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `0.3 személynap`
+Erőforrásigény:  0.3 személynap
 
 #### 9.4.6. Termékek kezelésének tesztelése (TP, TC, TR)
 
@@ -462,36 +463,34 @@ Erőforrásigény:  1 személynap
 
 ## 11. Projekt költségvetés
 
-```
-Az egyes leadások alkalmával rögzített erőforrásigényt, az elvállalt feladatok számát 
-és az adott mérföldkőben végzett munkáért szerezhető pontszámot kell beírni minden emberre külön-külön.
-```
-
 ### 11.1. Részletes erőforrásigény (személynap)
 
 
 |                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     `Teszt Elek`           |           `2`          |             `3`            |           `16`          |            `4`           |    `25`   |
-|                     `Remek Elek`           |           `1`          |             `4`            |           `13`          |            `4`           |    `22`   |
-|                     `Lev Elek`             |           `1`          |             `3`            |           `12`          |            `4`           |    `20`   |
+|                     Honti Szabolcs         |           `2`          |             `3`            |           `16`          |            `4`           |    `25`   |
+|                     Hirsch Ábel            |           `1`          |             `4`            |           `13`          |            `4`           |    `22`   |
+|                     Pető Patrik            |           `1`          |             `3`            |           `12`          |            `4`           |    `20`   |
+|                     Tóth János             |           `1`          |             `3`            |           `12`          |            `4`           |    `20`   |
 
 
 ### 11.2. Részletes feladatszámok
 
 |                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     `Teszt Elek`           |           `2`          |             `3`            |           `9`           |            `6`           |    `20`   |
-|                     `Remek Elek`           |           `1`          |             `2`            |           `7`           |            `5`           |    `15`   |
-|                     `Lev Elek`             |           `1`          |             `2`            |           `8`           |            `5`           |    `16`   |
+|                     Honti Szabolcs         |           `2`          |             `3`            |           `9`           |            `6`           |    `20`   |
+|                     Hirsch Ábel            |           `1`          |             `2`            |           `7`           |            `5`           |    `15`   |
+|                     Pető Patrik            |           `1`          |             `2`            |           `8`           |            `5`           |    `16`   |
+|                     Tóth János             |           `1`          |             `2`            |           `8`           |            `5`           |    `16`   |
 
 ### 11.3. Részletes költségvetés
 
 |                     Név                       | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:---------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
 |        Maximálisan választható pontszám %-ban |         10% (7)        |            30% (21)        |          50% (35)       |          30% (21)        | 100% (70) |
-|                     `Teszt Elek`              |           `7`          |             `13`           |          `35`           |            `15`          |    `70`   |
-|                     `Remek Elek`              |           `4`          |             `21`           |          `30`           |            `15`          |    `70`   |
-|                     `Lev Elek`                |           `4`          |             `21`           |          `30`           |            `15`          |    `70`   |
+|                     Honti Szabolcs            |           `7`          |             `13`           |          `35`           |            `15`          |    `70`   |
+|                     Hirsch Ábel               |           `4`          |             `21`           |          `30`           |            `15`          |    `70`   |
+|                     Pető Patrik               |           `4`          |             `21`           |          `30`           |            `15`          |    `70`   |
+|                     Tóth János                |           `4`          |             `21`           |          `30`           |            `15`          |    `70`   |
 
-Szeged, `2021-10-25`.
+Szeged, 2021-10-06.
