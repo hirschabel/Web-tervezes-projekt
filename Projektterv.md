@@ -193,7 +193,7 @@ A mérföldkőhöz tartozó feladatok bemutatása PPT keretében, pl. téma, ter
 
 ### 9.2. UML és adatbázis tervek (2. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `a rendszerarchitektúrát, az adatbázist és webalkalmazás kinézetét megtervezzük.`
+Ennek a feladatnak az a célja, hogy a rendszerarchitektúrát, az adatbázist és webalkalmazás kinézetét megtervezzük.
 
 Részfeladatai a következők:
 
@@ -259,153 +259,117 @@ A mérföldkőhöz tartozó feladatok bemutatása PPT keretében (elkészült di
 
 ### 9.3. Prototípus I. (3. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `egy működő prototípust hozzunk létre, ahol a vállalt funkcionális követelmények nagy része már prezentálható állapotban van.`
+Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, ahol a vállalt funkcionális követelmények nagy része már prezentálható állapotban van.
 
 Részfeladatai a következők:
 
-#### 9.3.1.  `Felhasználói munkamenet üzleti logikája több jogosultsági szinttel (admin, raktáros, sofőr)`
+#### 9.3.1.  Felhasználói munkamenet üzleti logikája több jogosultsági szinttel (admin, user, guest)
 
 Felelős: `Teszt Elek`
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
-#### 9.3.2.  `Felhasználói munkamenethez kapcsolódó GUI megvalósítása`
+#### 9.3.2.  Felhasználói munkamenethez kapcsolódó GUI megvalósítása
 
 Felelős: `Remek Elek`
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
-#### 9.3.3.  `Felhasználói munkamenethez szükséges adatok létrehozása az adatbázisban`
+#### 9.3.3.  Felhasználói munkamenethez szükséges adatok létrehozása az adatbázisban
 
 Felelős: `Lev Elek`
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
-#### 9.3.4.  `Felhasználók kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)`
+#### 9.3.4.  Termékek kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)
 
 Felelős: `Teszt Elek `
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
-#### 9.3.5.  `Felhasználók kezeléséhez kapcsolódó GUI megvalósítása`
+#### 9.3.5.  Termékek kezeléséhez kapcsolódó GUI megvalósítása
 
 Felelős: `Teszt Elek`
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
-#### 9.3.6.  `Raktárak kezeléshez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)`
+#### 9.3.6.  Termékek kezeléséhez szükséges adatok létrehozása az adatbázisban
+
+Felelős: `Lev Elek`
+
+Tartam:  3 nap
+
+Erőforrásigény:  1 személynap
+
+#### 9.3.7.  Kosár kezeléshez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)
 
 Felelős: `Remek Elek`
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
-#### 9.3.7.  `Raktárak kezeléshez kapcsolódó GUI megvalósítása`
+#### 9.3.8.  Kosár kezeléshez kapcsolódó GUI megvalósítása
 
 Felelős: `Remek Elek `
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
-#### 9.3.8.  `Raktárkezeléshez szükséges adatok létrehozása az adatbázisban`
 
-Felelős: `Lev Elek`
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `1 személynap`
-
-#### 9.3.9.  `Árukészletek kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)`
+#### 9.3.9.  Fizetés kezeléshez kapcsolódó GUI megvalósítása
 
 Felelős: `Lev Elek`
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
-#### 9.3.10.  `Árukészletek kezeléshez kapcsolódó GUI megvalósítása`
-
-Felelős: `Lev Elek`
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### 9.3.11.  `Árukészletek kezeléséhez szükséges adatok létrehozása az adatbázisban`
+#### 9.3.10.  Email-es kiértesítés új rendeléskor
 
 Felelős: `Lev Elek`
 
-Tartam:  `3 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  2 személynap
 
-#### 9.3.12.  `Járművek kezeléséhez kapcsolódó üzleti logika (listázása, módosítása, létrehozása, törlése)`
-
-Felelős: `Teszt Elek`
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### 9.3.13.  `Járművek kezeléshez kapcsolódó GUI megvalósítása`
+#### 9.3.11.  Biztonsági mentés automatikus létrehozása
 
 Felelős: `Teszt Elek `
 
-Tartam:  `5 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  2 személynap
 
-#### 9.3.14.  `Járművek kezeléséhez szükséges adatok létrehozása az adatbázisban`
+#### 9.3.12. Tesztelési dokumentum (TP, TC)
 
-Felelős: `Remek Elek `
+Felelős: Mindenki
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap/fő
 
-#### 9.3.15.  `Fuvarok kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)`
 
-Felelős: `Remek Elek`
+#### 9.3.23. Bemutató elkészítése 
 
-Tartam:  `4 nap`
+Felelős: `Teszt Elek`
 
-Erőforrásigény:  `2 személynap`
+Tartam:  1 nap
 
-#### 9.3.16.  `Fuvarok kezeléshez kapcsolódó GUI megvalósítása`
+Erőforrásigény:  1 személynap
 
-Felelős: `Remek Elek`
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `3 személynap`
-
-#### 9.3.17.  `Fuvarok kezeléséhez szükséges adatok létrehozása az adatbázisban`
-
-Felelős: `Lev Elek`
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `1 személynap`
-
-#### 9.3.18.  `Email-es kiértesítés új szállítmány esetén az adott raktárosnak és sofőrnek`
-
-Felelős: `Lev Elek`
-
-Tartam:  `5 nap`
-
-Erőforrásigény:  `2 személynap`
+####-----------------------------------------------------------------------
 
 #### 9.3.19.  `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
 
@@ -423,30 +387,7 @@ Tartam:  `4 nap`
 
 Erőforrásigény:  `2 személynap`
 
-#### 9.3.21.  `Biztonsági mentés automatikus létrehozása`
 
-Felelős: `Teszt Elek `
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-#### 9.3.22. Tesztelési dokumentum (TP, TC)
-
-Felelős: `Mindenki`
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `1 személynap/fő`
-
-
-#### 9.3.23. Bemutató elkészítése 
-
-Felelős: `Teszt Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `1 személynap`
 
 ```
 A feladatokat a 3.2-es pont figyelembevételével érdemes meghatározni és lehető legrészletesebben definiálni a feladatokat és a felelőseit. 
