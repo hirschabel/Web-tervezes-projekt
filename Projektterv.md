@@ -160,36 +160,30 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 
 A következőkben a tervezett feladatok részletes összefoglalása található.
 
-```
-Alapvetően egy feladatnak 1 felelőse lehet, de kivételt képez pl. a 9.1.1. részfeladat.`
-```
 
 ### 9.1. Projektterv (1. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `megvalósításhoz szükséges lépéseket, az ütemzést és a felelősöket meghatározzuk.`
+Ennek a feladatnak az a célja, hogy megvalósításhoz szükséges lépéseket, az ütemzést és a felelősöket meghatározzuk.
 
 Részfeladatai a következők:
 
 #### 9.1.1. Projektterv kitöltése
 
-Felelős: `Mindenki`
+Felelős: Mindenki
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `1 személynap/fő`
+Erőforrásigény:  1 személynap/fő
 
 
 #### 9.1.2. Bemutató elkészítése
 
 Felelős: `Teszt Elek`
 
-Tartam:  `2 nap`
+Tartam:  2 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében, pl. téma, tervezett funkciók, tagok, Gantt diagram.`
-```
 
 ### 9.2. UML és adatbázis tervek (2. mérföldkő)
 
@@ -201,61 +195,58 @@ Részfeladatai a következők:
 
 Felelős: `Teszt Elek`
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 9.2.2. Class diagram
 
 Felelős: `Lev Elek`
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 9.2.3. Sequence diagram
 
 Felelős: `Remek Elek`
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 9.2.4. Egyed-kapcsolat diagram adatbázishoz
 
 Felelős: `Remek Ele`
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `3 személynap`
+Erőforrásigény:  3 személynap
 
 #### 9.2.5. Package diagram
 
 Felelős: `Teszt Elek`
 
-Tartam:  `4 nap`
+Tartam:  4 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 9.2.6. Képernyőtervek
 
 Felelős: `Teszt Elek`
 
-Tartam:  `3 nap`
+Tartam:  3 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 9.2.7. Bemutató elkészítése
 
 Felelős: `Lev Elek`
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
-```
-A mérföldkőhöz tartozó feladatok bemutatása PPT keretében (elkészült diagramok és képernyőtervek)`
-```
 
 ### 9.3. Prototípus I. (3. mérföldkő)
 
@@ -327,7 +318,6 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-
 #### 9.3.9.  Fizetés kezeléshez kapcsolódó GUI megvalósítása
 
 Felelős: `Lev Elek`
@@ -360,8 +350,7 @@ Tartam:  3 nap
 
 Erőforrásigény:  1 személynap/fő
 
-
-#### 9.3.23. Bemutató elkészítése 
+#### 9.3.13. Bemutató elkészítése 
 
 Felelős: `Teszt Elek`
 
@@ -369,34 +358,11 @@ Tartam:  1 nap
 
 Erőforrásigény:  1 személynap
 
-####-----------------------------------------------------------------------
 
-#### 9.3.19.  `Fuvar útvonalának megjelenítése térképen a kezdő és a végponttal együtt`
-
-Felelős: `Lev Elek`
-
-Tartam:  `3 nap`
-
-Erőforrásigény:  `1 személynap`
-
-#### 9.3.20.  `Kapcsolatfelvételi űrlap biztosítása új cégek számára (üzleti logika és GUI)`
-
-Felelős: `Teszt Elek `
-
-Tartam:  `4 nap`
-
-Erőforrásigény:  `2 személynap`
-
-
-
-```
-A feladatokat a 3.2-es pont figyelembevételével érdemes meghatározni és lehető legrészletesebben definiálni a feladatokat és a felelőseit. 
-A bemutató során a prototípus aktuális állását kell prezentálni.
-```
 
 ### 9.4. Prototípus II. (4. mérföldkő)
 
-Ennek a feladatnak az a célja, hogy `az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik.`
+Ennek a feladatnak az a célja, hogy az előző mérföldkő hiányzó funkcióit pótoljuk, illetve a hibásan működő funkciókat és az esetlegesen felmerülő új funkciókat megvalósítsuk. Továbbá az alkalmazás alapos tesztelése is a mérföldkőben történik.
 
 Részfeladatai a következők:
 
@@ -404,27 +370,35 @@ Részfeladatai a következők:
 
 Felelős: `Teszt Elek`
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
 #### 9.4.2. Javított minőségű prototípus javított funkciókkal
 
 Felelős: `Lev Elek`
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
 #### 9.4.3. Javított minőségű prototípus a korábbi hiányzó funkciókkal
 
 Felelős: `Remek Elek`
 
-Tartam:  `5 nap`
+Tartam:  5 nap
 
-Erőforrásigény:  `2 személynap`
+Erőforrásigény:  2 személynap
 
-#### 9.4.4. `Felhasználói munkamenet tesztelése (TP, TC, TR)`
+#### 9.4.4. Felhasználói munkamenet tesztelése (TP, TC, TR)
+
+Felelős: `Teszt Elek`
+
+Tartam:  1 nap
+
+Erőforrásigény:  0.3 személynap
+
+#### 9.4.5. Felhasználói adatmódosítás tesztelése (TP, TC, TR)
 
 Felelős: `Teszt Elek`
 
@@ -432,89 +406,59 @@ Tartam:  `1 nap`
 
 Erőforrásigény:  `0.3 személynap`
 
-#### 9.4.5. `Raktárak kezelésének tesztelése (TP, TC, TR)`
+#### 9.4.6. Termékek kezelésének tesztelése (TP, TC, TR)
 
 Felelős: `Remek Elek`
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `0.3 személynap`
+Erőforrásigény:  0.3 személynap
 
-#### 9.4.6. `Árukészletek kezelésének tesztelése (TP, TC, TR)`
+#### 9.4.7. Kosár kezelésének tesztelése (TP, TC, TR)
 
 Felelős: `Teszt Elek`
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `0.3 személynap`
+Erőforrásigény:  0.3 személynap
 
-#### 9.4.7. `Járművek kezelésének tesztelése (TP, TC, TR)`
-
-Felelős: `Remek Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.3 személynap`
-
-#### 9.4.8. `Fuvarok kezelésének tesztelése (TP, TC, TR)`
-
-Felelős: `Teszt Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.3 személynap`
-
-#### 9.4.9. `Email-es funkciók tesztelése (TP, TC, TR)`
+#### 9.4.8. Fizetés kezelésének tesztelése (TP, TC, TR)
 
 Felelős: `Remek Elek`
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `0.3 személynap`
+Erőforrásigény:  0.3 személynap
 
-#### 9.4.10. `Térképes funkciók tesztelése (TP, TC, TR)`
+#### 9.4.9. Email-es funkciók tesztelése (TP, TC, TR)
 
-Felelős: `Lev Elek`
+Felelős: `Remek Elek`
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `0.3 személynap`
+Erőforrásigény:  0.3 személynap
 
-#### 9.4.11. `Kapcsolatfelvételi űrlap tesztelése (TP, TC, TR)`
-
-Felelős: `Lev Elek`
-
-Tartam:  `1 nap`
-
-Erőforrásigény:  `0.3 személynap`
-
-#### 9.4.12. `Biztonsági mentés tesztelése (TP, TC, TR)`
+#### 9.4.12. Biztonsági mentés tesztelése (TP, TC, TR)
 
 Felelős: `Lev Elek`
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `0.3 személynap`
+Erőforrásigény:  0.3 személynap
 
 #### 9.4.13. Bemutató elkészítése 
 
 Felelős: `Teszt Elek`
 
-Tartam:  `1 nap`
+Tartam:  1 nap
 
-Erőforrásigény:  `1 személynap`
+Erőforrásigény:  1 személynap
 
-```
-Működő végleges program, a frissített tesztelési dokumentációval. A 3. mérföldkőhöz képest funkiconálisan többet kell tudnia az oldalnak.
 
-```
 ## 10. Részletes időbeosztás
 
-![image](./MINTA-gantt-diagram.png)
+![image](./gantt-diagram.png)
 
-```
-Ide kell berakni a Gantt diagramot, amely a 9. fejezetben található részfeladatokat tartalmazza felelős/tartam bontásban.
-```
 
 ## 11. Projekt költségvetés
 
