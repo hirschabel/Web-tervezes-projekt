@@ -12,7 +12,7 @@
 | Verzió | Szerző(k)                | Dátum        | Státusz         | Megjegyzés                                                    |
 |--------|--------------------------|--------------|-----------------|---------------------------------------------------------------|
 |  0.1   |  Tóth János              |  2021-10-01  |  Tervezet       |  Legelső verzió                                               |
-
+|  0.2   |  Mindenki                |  2021-10-06  |  Előterjesztés  |  A projekt menedzsere jónak találta                                               |
 
 
 Státusz osztályozás:
@@ -64,11 +64,11 @@ A projekt a következő emberekből áll:
 
 |                                                                                                                   | Név             | E-mail cím (stud-os)       |
 |-------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------|
-| Megrendelő                                                                                                        | Márkus András | markusa@inf.u-szeged.hu  |
-| Felelősségek: Projekt menedzser, `Adatbázis és adatkapcsolatok`, `A rendszer működési logikája`, `Prezentációk`   | Hirsch Ábel  | h045844@stud.u-szeged.hu |
-| Felelősségek: `Felhasználói felületek`, `Dokumentáció`                                                            | Pető Patrik    | h050368@stud.u-szeged.hu |
-| `Projekt tag`                                                                                                     | Honti Szabolcs      | h045923@stud.u-szeged.hu |
-|																													| Tóth János 		  | h985829@stud.u-szeged.hu 
+| Megrendelő                                                                                                        | Márkus András   | markusa@inf.u-szeged.hu  |
+| Felelősségek: Projekt menedzser, Adatbázis és adatkapcsolatok, A rendszer működési logikája    					| Hirsch Ábel     | h045844@stud.u-szeged.hu |
+| Felelősségek: Felhasználói felületek                                                            					| Pető Patrik     | h050368@stud.u-szeged.hu |
+| Felelősségek: Dokumentáció                                                                            			| Honti Szabolcs  | h045923@stud.u-szeged.hu |
+| Felelősségek: Prezentációk																						| Tóth János	  | h985829@stud.u-szeged.hu |
 
 ## 6. A munka feltételei
 
@@ -488,9 +488,9 @@ Erőforrásigény:  1 személynap
 |                     Név                       | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:---------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
 |        Maximálisan választható pontszám %-ban |         10% (7)        |            30% (21)        |          50% (35)       |          30% (21)        | 100% (70) |
-|                     Honti Szabolcs            |           5            |             13             |          33             |            19            |    00     |
-|                     Hirsch Ábel               |           6            |             15             |          33             |            16            |    00     |
-|                     Pető Patrik               |           5            |             21             |          35             |             9            |    00     |
-|                     Tóth János                |           6            |             19             |          24             |            21            |    00     |
+|                     Honti Szabolcs            |           5            |             13             |          33             |            19            |    70     |
+|                     Hirsch Ábel               |           6            |             15             |          33             |            16            |    70     |
+|                     Pető Patrik               |           5            |             21             |          35             |             9            |    70     |
+|                     Tóth János                |           6            |             19             |          24             |            21            |    70     |
 
 Szeged, 2021-10-06.
