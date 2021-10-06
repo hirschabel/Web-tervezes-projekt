@@ -118,6 +118,12 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Hely: Online
  - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
  - Érintett témák: Projektterv kitöltésének folytatása
+ 
+3. megbeszélés:
+ - Időpont: 2021.10.06.
+ - Hely: Online
+ - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
+ - Érintett témák: Projektterv befejezése
 
 ### 7.3. Minőségbiztosítás
 
