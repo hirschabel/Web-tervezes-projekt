@@ -464,11 +464,13 @@ Erőforrásigény:  1 személynap
 
 ## 10. Részletes időbeosztás
 
-Sárga - Mindenki
-Kék   - Honti Szabolcs
-Lila  - Hirsch Ábel
-Zöld  - Pető Patrik
-Piros - Tóth János
+|                     Név                    |            Szín          |
+|:------------------------------------------:|:------------------------:|
+|                     Mindenki               |            Sárga         |
+|                     Honti Szabolcs         |            Kék           |
+|                     Hirsch Ábel            |            Lila          |
+|                     Pető Patrik            |            Zöld          |
+|                     Tóth János             |            Piros         |
 
 ![image](./feladat_diagram.png)
 
