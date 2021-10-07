@@ -464,7 +464,15 @@ Erőforrásigény:  1 személynap
 
 ## 10. Részletes időbeosztás
 
-![image](./gantt-diagram.png)
+Sárga - Mindenki
+Kék   - Honti Szabolcs
+Lila  - Hirsch Ábel
+Zöld  - Pető Patrik
+Piros - Tóth János
+
+![image](./feladat_diagram.png)
+
+![image](./emberek_diagram.png)
 
 
 ## 11. Projekt költségvetés
