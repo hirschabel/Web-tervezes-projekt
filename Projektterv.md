@@ -516,4 +516,4 @@ Erőforrásigény:  1 személynap
 |                     Pető Patrik               |           5            |             21             |          35             |             9            |    70     |
 |                     Tóth János                |           6            |             19             |          24             |            21            |    70     |
 
-Szeged, 2021-10-06.
+Szeged, 2021-10-07.
