@@ -1,19 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><project name="Gant Diagram" company="" webLink="" view-date="2021-09-28" view-index="0" gantt-divider-location="471" resource-divider-location="300" version="3.1.3102" locale="en_US">
+<?xml version="1.0" encoding="UTF-8"?><project name="Gant Diagram" company="" webLink="" view-date="2021-09-12" view-index="1" gantt-divider-location="691" resource-divider-location="591" version="3.1.3102" locale="en_US">
     <description/>
     <view zooming-state="default:3" id="gantt-chart">
-        <field id="tpd3" name="Name" width="349" order="0"/>
-        <field id="tpd4" name="Begin date" width="52" order="1"/>
-        <field id="tpd5" name="End date" width="51" order="2"/>
-        <timeline>
-            <![CDATA[42]]>
-        </timeline>
+        <field id="tpd3" name="Name" width="552" order="0"/>
+        <field id="tpd4" name="Begin date" width="62" order="1"/>
+        <field id="tpd5" name="End date" width="58" order="2"/>
         <option id="color.recent">
-            <![CDATA[#0000cc #00cc33 #cc00cc #ff0000 #ffff00 #000000]]>
+            <![CDATA[#cc00cc #00cc33 #0000cc #ff0000 #ffff00 #000000]]>
         </option>
     </view>
     <view id="resource-table">
-        <field id="0" name="Name" width="210" order="0"/>
-        <field id="1" name="Default role" width="86" order="1"/>
+        <field id="0" name="Name" width="557" order="0"/>
+        <field id="1" name="Default role" width="15" order="1"/>
     </view>
     <!-- -->
     <calendars>
@@ -40,12 +37,12 @@
             <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
         </taskproperties>
         <task id="21" name="1. mérföldkő" meeting="false" start="2021-10-01" duration="7" complete="0" expand="true">
-            <task id="23" name="9.1.1. Projektterv kitöltése" color="#ffff00" meeting="false" start="2021-10-01" duration="6" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
+            <task id="23" name="9.1.1. Projektterv kitöltése" color="#ffff00" meeting="false" start="2021-10-01" duration="7" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
             <task id="25" name="9.1.2. Bemutató elkészítése" color="#00cc33" meeting="false" start="2021-10-06" duration="2" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="31" name="2. mérföldkő" color="#000000" meeting="false" start="2021-10-08" duration="12" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+        <task id="31" name="2. mérföldkő" color="#000000" meeting="false" start="2021-10-08" duration="11" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
             <task id="34" name="9.2.1. Use Case diagram" color="#cc00cc" meeting="false" start="2021-10-08" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
-                <depend id="40" type="2" difference="0" hardness="Strong"/>
+                <depend id="39" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="36" name="9.2.2. Class diagram" color="#00cc33" meeting="false" start="2021-10-08" duration="4" complete="0" thirdDate="2021-10-13" thirdDate-constraint="0" expand="true">
                 <depend id="40" type="2" difference="0" hardness="Strong"/>
@@ -53,49 +50,83 @@
             <task id="37" name="9.2.3. Sequence diagram" color="#0000cc" meeting="false" start="2021-10-15" duration="3" complete="0" thirdDate="2021-10-13" thirdDate-constraint="0" expand="true">
                 <depend id="41" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="38" name="9.2.4. Egyed-kapcsolat diagram adatbázishoz" color="#ff0000" meeting="false" start="2021-10-15" duration="4" complete="0" thirdDate="2021-10-13" thirdDate-constraint="0" expand="true">
-                <depend id="41" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="39" name="9.2.5. Package diagram" color="#cc00cc" meeting="false" start="2021-10-09" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
-            <task id="40" name="9.2.6. Képernyőtervek" color="#00cc33" meeting="false" start="2021-10-12" duration="3" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
-                <depend id="37" type="2" difference="0" hardness="Strong"/>
-                <depend id="38" type="2" difference="0" hardness="Strong"/>
-            </task>
-            <task id="41" name="9.2.7. Bemutató elkészítése" color="#0000cc" meeting="false" start="2021-10-19" duration="1" complete="0" thirdDate="2021-10-19" thirdDate-constraint="0" expand="true"/>
+            <task id="38" name="9.2.4. Egyed-kapcsolat diagram adatbázishoz" color="#ff0000" meeting="false" start="2021-10-14" duration="4" complete="0" thirdDate="2021-10-13" thirdDate-constraint="0" expand="true"/>
+            <task id="39" name="9.2.5. Package diagram" color="#cc00cc" meeting="false" start="2021-10-12" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
+            <task id="40" name="9.2.6. Képernyőtervek" color="#00cc33" meeting="false" start="2021-10-12" duration="3" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
+            <task id="41" name="9.2.7. Bemutató elkészítése" color="#0000cc" meeting="false" start="2021-10-18" duration="1" complete="0" thirdDate="2021-10-19" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="42" name="3. mérföldkő" color="#000000" shape="1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,1" meeting="false" start="2021-10-01" duration="38" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+        <task id="42" name="3. mérföldkő" color="#000000" shape="0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0" meeting="false" start="2021-10-22" duration="21" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
             <task id="63" name="9.3.1.  Felhasználói munkamenet üzleti logikája több jogosultsági szinttel (admin, user, guest)" color="#cc00cc" meeting="false" start="2021-10-26" duration="5" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
             <task id="64" name="9.3.2.  Felhasználói munkamenethez kapcsolódó GUI megvalósítása" color="#00cc33" meeting="false" start="2021-10-22" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
                 <depend id="63" type="2" difference="0" hardness="Strong"/>
+                <depend id="71" type="2" difference="0" hardness="Strong"/>
             </task>
             <task id="65" name="9.3.3.  Felhasználói munkamenethez szükséges adatok létrehozása az adatbázisban" color="#0000cc" meeting="false" start="2021-10-22" duration="3" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
                 <depend id="63" type="2" difference="0" hardness="Strong"/>
+                <depend id="72" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="66" name="9.3.4.  Termékek kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)" color="#cc00cc" meeting="false" start="2021-11-04" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
-            <task id="67" name="9.3.5.  Termékek kezeléséhez kapcsolódó GUI megvalósítása" color="#00cc33" meeting="false" start="2021-11-01" duration="3" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+            <task id="66" name="9.3.4.  Termékek kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)" color="#cc00cc" meeting="false" start="2021-11-04" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="59" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="67" name="9.3.5.  Termékek kezeléséhez kapcsolódó GUI megvalósítása" color="#00cc33" meeting="false" start="2021-10-31" duration="3" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="66" type="2" difference="0" hardness="Strong"/>
+                <depend id="70" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="68" name="9.3.6.  Termékek kezeléséhez szükséges adatok létrehozása az adatbázisban" color="#ff0000" meeting="false" start="2021-11-01" duration="3" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
                 <depend id="66" type="2" difference="0" hardness="Strong"/>
             </task>
-            <task id="68" name="9.3.6.  Termékek kezeléséhez szükséges adatok létrehozása az adatbázisban" color="#ff0000" meeting="false" start="2021-11-01" duration="3" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
-            <task id="69" name="9.3.7.  Kosár kezeléshez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)" color="#cc00cc" meeting="false" start="2021-10-01" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
-            <task id="70" name="9.3.8.  Kosár kezeléshez kapcsolódó GUI megvalósítása" color="#00cc33" meeting="false" start="2021-10-01" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
-            <task id="71" name="9.3.9.  Fizetés kezeléshez kapcsolódó GUI megvalósítása" color="#00cc33" meeting="false" start="2021-10-01" duration="5" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
-            <task id="72" name="9.3.10.  Email-es kiértesítés új rendeléskor" color="#0000cc" meeting="false" start="2021-10-01" duration="5" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
-            <task id="73" name="9.3.11.  Biztonsági mentés automatikus létrehozása" color="#0000cc" meeting="false" start="2021-10-01" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
-            <task id="59" name="9.3.12. Tesztelési dokumentum (TP, TC)" color="#ffff00" meeting="false" start="2021-10-01" duration="3" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
-            <task id="60" name="9.3.13. Bemutató elkészítése" color="#ff0000" meeting="false" start="2021-10-01" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
+            <task id="69" name="9.3.7.  Kosár kezeléshez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)" color="#cc00cc" meeting="false" start="2021-11-07" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="60" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="70" name="9.3.8.  Kosár kezeléshez kapcsolódó GUI megvalósítása" color="#00cc33" meeting="false" start="2021-11-03" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="59" type="2" difference="0" hardness="Strong"/>
+                <depend id="69" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="71" name="9.3.9.  Fizetés kezeléshez kapcsolódó GUI megvalósítása" color="#00cc33" meeting="false" start="2021-10-26" duration="5" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="67" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="72" name="9.3.10.  Email-es kiértesítés új rendeléskor" color="#0000cc" meeting="false" start="2021-10-25" duration="5" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="73" name="9.3.11.  Biztonsági mentés automatikus létrehozása" color="#0000cc" meeting="false" start="2021-10-30" duration="4" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
+            <task id="59" name="9.3.12. Tesztelési dokumentum (TP, TC)" color="#ffff00" meeting="false" start="2021-11-08" duration="3" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="60" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="60" name="9.3.13. Bemutató elkészítése" color="#ff0000" meeting="false" start="2021-11-11" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
         </task>
-        <task id="52" name="4. mérföldkő" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true">
-            <task id="54" name="9.4.1. Javított minőségű prototípus új funkciókkal" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="55" name="9.4.2. Javított minőségű prototípus javított funkciókkal" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="56" name="9.4.3. Javított minőségű prototípus a korábbi hiányzó funkciókkal" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="75" name="9.4.4. Felhasználói munkamenet tesztelése (TP, TC, TR)" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="76" name="9.4.5. Felhasználói adatmódosítás tesztelése (TP, TC, TR)" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="77" name="9.4.6. Termékek kezelésének tesztelése (TP, TC, TR)" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="78" name="9.4.7. Kosár kezelésének tesztelése (TP, TC, TR)" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="79" name="9.4.8. Fizetés kezelésének tesztelése (TP, TC, TR)" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="80" name="9.4.9. Email-es funkciók tesztelése (TP, TC, TR)" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="81" name="9.4.12. Biztonsági mentés tesztelése (TP, TC, TR)" meeting="false" start="2021-10-01" duration="1" complete="0" expand="true"/>
-            <task id="57" name="9.4.13. Bemutató elkészítése" color="#8cb6ce" meeting="false" start="2021-10-01" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
+        <task id="52" name="4. mérföldkő" meeting="false" start="2021-11-12" duration="16" complete="0" expand="true">
+            <task id="54" name="9.4.1. Javított minőségű prototípus új funkciókkal" color="#ff0000" meeting="false" start="2021-11-17" duration="5" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="77" type="2" difference="0" hardness="Strong"/>
+                <depend id="80" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="55" name="9.4.2. Javított minőségű prototípus javított funkciókkal" color="#ff0000" meeting="false" start="2021-11-12" duration="5" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="54" type="2" difference="0" hardness="Strong"/>
+                <depend id="56" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="56" name="9.4.3. Javított minőségű prototípus a korábbi hiányzó funkciókkal" color="#0000cc" meeting="false" start="2021-11-17" duration="5" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="75" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="75" name="9.4.4. Felhasználói munkamenet tesztelése (TP, TC, TR)" color="#0000cc" meeting="false" start="2021-11-22" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="76" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="76" name="9.4.5. Felhasználói adatmódosítás tesztelése (TP, TC, TR)" color="#0000cc" meeting="false" start="2021-11-23" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="77" type="2" difference="0" hardness="Strong"/>
+                <depend id="80" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="77" name="9.4.6. Termékek kezelésének tesztelése (TP, TC, TR)" color="#cc00cc" meeting="false" start="2021-11-24" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="78" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="78" name="9.4.7. Kosár kezelésének tesztelése (TP, TC, TR)" color="#cc00cc" meeting="false" start="2021-11-25" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="79" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="79" name="9.4.8. Fizetés kezelésének tesztelése (TP, TC, TR)" color="#cc00cc" meeting="false" start="2021-11-26" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="57" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="80" name="9.4.9. Email-es funkciók tesztelése (TP, TC, TR)" color="#00cc33" meeting="false" start="2021-11-24" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true">
+                <depend id="81" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="81" name="9.4.12. Biztonsági mentés tesztelése (TP, TC, TR)" color="#00cc33" meeting="false" start="2021-11-25" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
+            <task id="57" name="9.4.13. Bemutató elkészítése" color="#cc00cc" meeting="false" start="2021-11-27" duration="1" complete="0" thirdDate="2021-10-01" thirdDate-constraint="0" expand="true"/>
         </task>
     </tasks>
     <resources>
@@ -112,16 +143,27 @@
         <allocation task-id="59" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="34" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="39" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="77" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="78" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="79" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="57" resource-id="0" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="23" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="65" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="72" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="73" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="59" resource-id="1" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="37" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="56" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="75" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="76" resource-id="1" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="23" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="68" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="60" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="41" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="38" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="59" resource-id="2" function="Default:0" responsible="false" load="100.0"/>
+        <allocation task-id="54" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="2" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="23" resource-id="3" function="Default:0" responsible="false" load="100.0"/>
         <allocation task-id="64" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="67" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
@@ -131,6 +173,8 @@
         <allocation task-id="25" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="36" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
         <allocation task-id="40" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="80" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
+        <allocation task-id="81" resource-id="3" function="Default:0" responsible="true" load="100.0"/>
     </allocations>
     <vacations/>
     <previous>
