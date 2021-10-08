@@ -12,7 +12,7 @@
 | Verzió | Szerző(k)                | Dátum        | Státusz         | Megjegyzés                                                    |
 |--------|--------------------------|--------------|-----------------|---------------------------------------------------------------|
 |  0.1   |  Tóth János              |  2021-10-01  |  Tervezet       |  Legelső verzió                                               |
-|  0.2   |  Mindenki                |  2021-10-06  |  Előterjesztés  |  A projekt menedzsere jónak találta                           |
+|  0.2   |  Mindenki                |  2021-10-07  |  Előterjesztés  |  A projekt menedzsere jónak találta                           |
 
 
 Státusz osztályozás:
@@ -131,6 +131,12 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
  - Érintett témák: Projektterv javítása, Bemutató elkészítése
 
+5. megbeszélés:
+ - Időpont: 2021.10.08.
+ - Hely: Online
+ - Résztvevők: Hirsch Ábel, Pető Patrik
+ - Érintett témák: Projektterv javítása a megrendelő kérésére
+
 
 ### 7.3. Minőségbiztosítás
 
@@ -206,7 +212,7 @@ Részfeladatai a következők:
 
 #### 9.2.1. Use Case diagram
 
-Felelős: Hirsch Ábel
+Felelős: Honti Szabolcs
 
 Tartam:  4 nap
 
@@ -230,15 +236,15 @@ Erőforrásigény:  1 személynap
 
 #### 9.2.4. Egyed-kapcsolat diagram adatbázishoz
 
-Felelős: Tóth János
+Felelős: Hirsch Ábel
 
 Tartam:  4 nap
 
-Erőforrásigény:  3 személynap
+Erőforrásigény:  2 személynap
 
 #### 9.2.5. Package diagram
 
-Felelős: Hirsch Ábel
+Felelős: Tóth János
 
 Tartam:  4 nap
 
@@ -268,15 +274,7 @@ Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, 
 Részfeladatai a következők:
 
 
-#### 9.3.1.  Felhasználói munkamenet üzleti logikája több jogosultsági szinttel (admin, user, guest)
-
-Felelős: Hirsch Ábel
-
-Tartam:  5 nap
-
-Erőforrásigény:  2 személynap
-
-#### 9.3.2.  Felhasználói munkamenethez kapcsolódó GUI megvalósítása
+#### 9.3.1.  Regisztrációhoz, bejelentkezéshez és profilhoz tartozó GUI készítése
 
 Felelős: Pető Patrik
 
@@ -284,31 +282,7 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.3.  Felhasználói munkamenethez szükséges adatok létrehozása az adatbázisban
-
-Felelős: Honti Szabolcs
-
-Tartam:  3 nap
-
-Erőforrásigény:  1 személynap
-
-#### 9.3.4.  Termékek kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)
-
-Felelős: Hirsch Ábel
-
-Tartam:  4 nap
-
-Erőforrásigény:  2 személynap
-
-#### 9.3.5.  Termékek kezeléséhez kapcsolódó GUI megvalósítása
-
-Felelős: Pető Patrik
-
-Tartam:  3 nap
-
-Erőforrásigény:  1 személynap
-
-#### 9.3.6.  Termékek kezeléséhez szükséges adatok létrehozása az adatbázisban
+#### 9.3.2.  Felhasználói adatbázisok elkészítése
 
 Felelős: Tóth János
 
@@ -316,7 +290,31 @@ Tartam:  3 nap
 
 Erőforrásigény:  1 személynap
 
-#### 9.3.7.  Kosár kezeléshez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)
+#### 9.3.3.  Felhasználói adatok létrehozása az adatbázisban
+
+Felelős: Honti Szabolcs
+
+Tartam:  2 nap
+
+Erőforrásigény:  1 személynap
+
+#### 9.3.4.  Termékek megjelenítéséhez kapcsolódó GUI megvalósítása
+
+Felelős: Pető Patrik
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.5.  Termékek kezeléséhez kapcsolódó GUI megvalósítása (módosítása, létrehozása, törlése)
+
+Felelős: Honti Szabolcs
+
+Tartam:  4 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.6.  Termékek kezeléséhez tartozó üzleti logika (módosítása, létrehozása, törlése)
 
 Felelős: Hirsch Ábel
 
@@ -324,31 +322,63 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.8.  Kosár kezeléshez kapcsolódó GUI megvalósítása
+#### 9.3.7.  Termékek létrehozása az adatbázisban
+
+Felelős: Tóth János
+
+Tartam:  2 nap
+
+Erőforrásigény:  1 személynap
+
+#### 9.3.8.  Kereséshez/szűréshez kapcsolódó GUI megvalósítása
 
 Felelős: Pető Patrik
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.9.  Termékek kereséséhez/szűréséhez tartozó üzleti logika
+
+Felelős: Hirsch Ábel
 
 Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.9.  Fizetés kezeléshez kapcsolódó GUI megvalósítása
+#### 9.3.10.  Kosárhoz kapcsolódó GUI megvalósítása
+
+Felelős: Tóth János
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.11.  Kosár kezeléshez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)
+
+Felelős: Hirsch Ábel
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.12.  Fizetéshez kapcsolódó GUI megvalósítása
 
 Felelős: Pető Patrik
 
-Tartam:  5 nap
+Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.10.  Email-es kiértesítés új rendeléskor
+#### 9.3.13.  Rendelés kezeléshez tartozó üzleti logika (listázása, létrehozása)
 
-Felelős: Honti Szabolcs
+Felelős: Hirsch Ábel
 
-Tartam:  5 nap
+Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.11.  Biztonsági mentés automatikus létrehozása
+#### 9.3.14.  Email-es kiértesítés új rendeléskor
 
 Felelős: Honti Szabolcs
 
@@ -356,7 +386,15 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.12. Tesztelési dokumentum (TP, TC)
+#### 9.3.15.  Biztonsági mentés automatikus létrehozása
+
+Felelős: Honti Szabolcs
+
+Tartam:  4 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.16. Tesztelési dokumentum (TP, TC)
 
 Felelős: Mindenki
 
@@ -364,7 +402,7 @@ Tartam:  3 nap
 
 Erőforrásigény:  1 személynap/fő
 
-#### 9.3.13. Bemutató elkészítése 
+#### 9.3.17. Bemutató elkészítése 
 
 Felelős: Tóth János
 
@@ -462,7 +500,7 @@ Erőforrásigény:  0.3 személynap
 
 #### 9.4.13. Bemutató elkészítése 
 
-Felelős: Hirsch Ábel
+Felelős: Tóth János
 
 Tartam:  1 nap
 
@@ -491,20 +529,20 @@ Erőforrásigény:  1 személynap
 
 |                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     Honti Szabolcs         |            1           |              1             |            6            |            0.6           |    8.6    |
-|                     Hirsch Ábel            |            1           |              2             |            7            |            1.9           |    11.9   |
-|                     Pető Patrik            |            2           |              5             |            8            |            2.6           |    17.6   |
-|                     Tóth János             |            1           |              4             |            3            |             3            |    11     |
+|                     Honti Szabolcs         |            1           |              2             |            8            |            2.6           |    13.6   |
+|                     Hirsch Ábel            |            1           |              2             |            9            |            0.9           |    12.9   |
+|                     Pető Patrik            |            2           |              3             |            9            |            0.6           |    14.6   |
+|                     Tóth János             |            1           |              2             |            6            |             4            |    13     |
 
 
 ### 11.2. Részletes feladatszámok
 
 |                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     Honti Szabolcs         |            1           |              1             |            4            |             3            |      9    |
-|                     Hirsch Ábel            |            1           |              2             |            4            |             4            |     11    |
+|                     Honti Szabolcs         |            1           |              2             |            5            |             3            |     11    |
+|                     Hirsch Ábel            |            1           |              1             |            5            |             3            |     10    |
 |                     Pető Patrik            |            2           |              2             |            5            |             2            |     11    |
-|                     Tóth János             |            1           |              2             |            3            |             2            |      8    |
+|                     Tóth János             |            1           |              2             |            5            |             3            |     11    |
 
 ### 11.3. Részletes költségvetés
 
@@ -513,7 +551,7 @@ Erőforrásigény:  1 személynap
 |        Maximálisan választható pontszám %-ban |         10% (7)        |            30% (21)        |          50% (35)       |          30% (21)        | 100% (70) |
 |                     Honti Szabolcs            |           5            |             13             |          33             |            19            |    70     |
 |                     Hirsch Ábel               |           6            |             15             |          33             |            16            |    70     |
-|                     Pető Patrik               |           5            |             21             |          35             |             9            |    70     |
+|                     Pető Patrik               |           7            |             18             |          35             |            10            |    70     |
 |                     Tóth János                |           6            |             19             |          24             |            21            |    70     |
 
 Szeged, 2021-10-07.
