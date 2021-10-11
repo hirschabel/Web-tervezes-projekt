@@ -5,14 +5,14 @@
  Egy webshop ebben a pandémiás időszakban elengethetetlen. Egy-egy nagy áruház ha rendelkezik webshoppal képes a polcokon lévő termékeket akár percek alatt, vagy akár egy előre egyeztetett időpontra az otthonunk ajtajába kiszállítani. 
  Azonban minden egy átlátható, felhasználóbarát felületnek kell lennie, hogy az egyszerű vásárló is kényelmesen el tudjon rajta igazodni. Egy helyen megtalálható az összes termék és egyben leírásuk, különböző akciók, promóciók.
  Egy gyors regisztrációt követve képesek vagyunk saját kosarunk megtekintésére, termékek kiválasztására, majd a fizetés és szállítás meghatározására. Több üzlet közül ki tudjuk választani a nekünk legszimpatikusabbat, majd akár házhoz rendelni, vagy az üzletnél át tudjuk venni a termékeket.
- Gyors, egyszerű. és akár a kanapéról el lehet végezni a heti teljeskörű bevásárlást, ha rendelkezésre áll egy megfelelően előállított webshop. 
+ Gyors, egyszerű és akár a kanapéról el lehet végezni a heti teljeskörű bevásárlást, ha rendelkezésre áll egy megfelelően előállított webshop. 
 
 ## 2. Verziók
 
 | Verzió | Szerző(k)                | Dátum        | Státusz         | Megjegyzés                                                    |
 |--------|--------------------------|--------------|-----------------|---------------------------------------------------------------|
 |  0.1   |  Tóth János              |  2021-10-01  |  Tervezet       |  Legelső verzió                                               |
-|  0.2   |  Mindenki                |  2021-10-06  |  Előterjesztés  |  A projekt menedzsere jónak találta                                               |
+|  0.2   |  Mindenki                |  2021-10-07  |  Előterjesztés  |  A projekt menedzsere jónak találta                           |
 
 
 Státusz osztályozás:
@@ -22,7 +22,7 @@ Státusz osztályozás:
 
 ## 3. A projekt bemutatása
 
-Ez a projektterv a Webshop projektet mutatja be, mely 2021-10-02-től 2021-11-29-ig tart. A projekt célja, hogy megfelelő felületet biztosítson a rendelések online elvégzésére és az áru adatok nyilvántartására. Mindezért egy egyszerűen használható, átlátható és hatékonyan működő webalkalmazás fog felelni. A projekten négy fő fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni a megrendelőnek.
+Ez a projektterv a Webshop projektet mutatja be, mely 2021-10-01-től 2021-12-02-ig tart. A projekt célja, hogy megfelelő felületet biztosítson a rendelések online elvégzésére és az áru adatok nyilvántartására. Mindezért egy egyszerűen használható, átlátható és hatékonyan működő webalkalmazás fog felelni. A projekten négy fő fejlesztő fog dolgozni, az elvégzett feladatokat pedig négy alkalommal fogjuk prezentálni a megrendelőnek.
 
 ### 3.1. Rendszerspecifikáció
 
@@ -34,9 +34,9 @@ A rendszernek képesnek kell lennie arra, hogy adott felhasználó adatait és a
  - Felhasználók kezelése (CRUD)
  - Termékek kezelése (CRUD)
  - Kosár kezelése (CRUD)
+ - Termékek keresése/szűrése
  - Email-es kiértesítés új rendeléskor
  - Biztonsági mentés automatikus létrehozása
- - Termékek keresése/szűrése
 
 ### 3.3. Nem funkcionális követelmények
 
@@ -47,15 +47,15 @@ A rendszernek képesnek kell lennie arra, hogy adott felhasználó adatait és a
 
 ## 4. Költség- és erőforrás-szükségletek
 
-Az erőforrásigényünk összesen kb. 22 személynap/fő.
+Az erőforrásigényünk összesen kb. 12 személynap/fő.
 
 A rendelkezésünkre áll összesen 4 * 70 = 280 pont.
 
 ## 5. Szervezeti felépítés és felelősségmegosztás
-A projekt megrendelője Márkus András. A Webshop projektet a projektcsapat fogja végrehajtani, amely jelenleg n fejlesztőből áll. A csapatban található négy munktapasztalat nélküli szoftverfejlesztő.
+A projekt megrendelője Márkus András. A Webshop projektet a projektcsapat fogja végrehajtani, amely jelenleg 4 fejlesztőből áll. A csapatban található négy munktapasztalat nélküli szoftverfejlesztő.
+ - Honti Szabolcs
  - Hirsch Ábel
  - Pető Patrik
- - Honti Szabolcs
  - Tóth János
 
 
@@ -65,10 +65,10 @@ A projekt a következő emberekből áll:
 |                                                                                                                   | Név             | E-mail cím (stud-os)       |
 |-------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------|
 | Megrendelő                                                                                                        | Márkus András   | markusa@inf.u-szeged.hu  |
-| Felelősségek: Projekt menedzser, Adatbázis és adatkapcsolatok, A rendszer működési logikája    					| Hirsch Ábel     | h045844@stud.u-szeged.hu |
-| Felelősségek: Felhasználói felületek                                                            					| Pető Patrik     | h050368@stud.u-szeged.hu |
-| Felelősségek: Dokumentáció                                                                            			| Honti Szabolcs  | h045923@stud.u-szeged.hu |
-| Felelősségek: Prezentációk																						| Tóth János	  | h985829@stud.u-szeged.hu |
+| Felelősségek: Projekt menedzser, Adatbázis és adatkapcsolatok, A rendszer működési logikája    		    | Hirsch Ábel     | h045844@stud.u-szeged.hu |
+| Felelősségek: Felhasználói felületek                                                  			    | Pető Patrik     | h050368@stud.u-szeged.hu |
+| Felelősségek: Dokumentáció                                                                            	    | Honti Szabolcs  | h045923@stud.u-szeged.hu |
+| Felelősségek: Prezentációk											    | Tóth János      | h985829@stud.u-szeged.hu |
 
 ## 6. A munka feltételei
 
@@ -101,7 +101,7 @@ A projekt a következő technológiákat/szoftvereket fogja használni a munka s
 ## 7. Jelentések
 
 ### 7.1. Munka menedzsment
-A munkát Hirsch Ábel koordinálja. Fő feladata, hogy a programozók által jónak talált feladatok megoldását ellenőrizze, és véglegesítse. Ezen kívül ő szolgáltatja a szükséges információt a csapattagok számára, legyen az bármivel kapcsolatos (projekthez kapcsolódóan). A heti gyűléseket egy segíd alkalmazás felhasználásával (Discord) online vezeti.
+A munkát Hirsch Ábel koordinálja. Fő feladata, hogy a programozók által jónak talált feladatok megoldását ellenőrizze, és véglegesítse. Ezen kívül ő szolgáltatja a szükséges információt a csapattagok számára, legyen az bármivel kapcsolatos (projekthez kapcsolódóan). A heti gyűléseket egy segéd alkalmazás felhasználásával (Discord) online vezeti.
 
 ### 7.2. Csoportgyűlések
 
@@ -125,6 +125,19 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
  - Érintett témák: Projektterv befejezése
 
+4. megbeszélés:
+ - Időpont: 2021.10.07.
+ - Hely: Online
+ - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
+ - Érintett témák: Projektterv javítása, Bemutató elkészítése
+
+5. megbeszélés:
+ - Időpont: 2021.10.08.
+ - Hely: Online
+ - Résztvevők: Hirsch Ábel, Pető Patrik
+ - Érintett témák: Projektterv javítása a megrendelő kérésére
+
+
 ### 7.3. Minőségbiztosítás
 
 Az elkészült terveket a terveken nem dolgozó csapattársak közül átnézik, hogy megfelel-e a specifikációnak és az egyes diagramtípusok összhangban vannak-e egymással. A meglévő rendszerünk helyes működését a prototípusok bemutatása előtt a tesztelési dokumentumban leírtak végrehajtása alapján ellenőrizzük és összevetjük a specifikációval, hogy az elvárt eredményt kapjuk-e. További tesztelési lehetőségek: unit tesztek írása az egyes modulokhoz vagy a kód közös átnézése (code review) egy, a vizsgált modul programozásában nem résztvevő csapattaggal. Szoftverünk minőségét a végső leadás előtt javítani kell a rendszerünkre lefuttatott kódelemzés során kapott metrikaértékek és szabálysértések figyelembevételével.
@@ -136,7 +149,7 @@ Az alábbi lehetőségek vannak a szoftver megfelelő minőségének biztosítá
 
 ### 7.4. Átadás, eredmények elfogadása
 
-A projekt eredményeit Márkus András fogja elfogadni. A projektterven változásokat csak  Márkus András írásos kérés esetén Márkus András engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek.
+A projekt eredményeit Márkus András fogja elfogadni. A projektterven változásokat csak Hirsch Ábel írásos kérése esetén Márkus András engedélyével lehet tenni. A projekt eredményesnek bizonyul, ha specifikáció helyes és határidőn belül készül el. Az esetleges késések pontlevonást eredményeznek.
 Az elfogadás feltételeire és beadás formájára vonatkozó részletes leírás a következő honlapon olvasható: https://okt.sed.hu/rf1/
 
 ### 7.5. Státuszjelentés
@@ -177,7 +190,7 @@ Részfeladatai a következők:
 
 Felelős: Mindenki
 
-Tartam:  4 nap
+Tartam:  7 nap
 
 Erőforrásigény:  1 személynap/fő
 
@@ -199,7 +212,7 @@ Részfeladatai a következők:
 
 #### 9.2.1. Use Case diagram
 
-Felelős: Hirsch Ábel
+Felelős: Honti Szabolcs
 
 Tartam:  4 nap
 
@@ -223,15 +236,15 @@ Erőforrásigény:  1 személynap
 
 #### 9.2.4. Egyed-kapcsolat diagram adatbázishoz
 
-Felelős: Tóth János
+Felelős: Hirsch Ábel
 
 Tartam:  4 nap
 
-Erőforrásigény:  3 személynap
+Erőforrásigény:  2 személynap
 
 #### 9.2.5. Package diagram
 
-Felelős: Hirsch Ábel
+Felelős: Tóth János
 
 Tartam:  4 nap
 
@@ -261,15 +274,7 @@ Ennek a feladatnak az a célja, hogy egy működő prototípust hozzunk létre, 
 Részfeladatai a következők:
 
 
-#### 9.3.1.  Felhasználói munkamenet üzleti logikája több jogosultsági szinttel (admin, user, guest)
-
-Felelős: Hirsch Ábel
-
-Tartam:  5 nap
-
-Erőforrásigény:  2 személynap
-
-#### 9.3.2.  Felhasználói munkamenethez kapcsolódó GUI megvalósítása
+#### 9.3.1.  Regisztrációhoz, bejelentkezéshez és profilhoz tartozó GUI készítése
 
 Felelős: Pető Patrik
 
@@ -277,31 +282,7 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.3.  Felhasználói munkamenethez szükséges adatok létrehozása az adatbázisban
-
-Felelős: Honti Szabolcs
-
-Tartam:  3 nap
-
-Erőforrásigény:  1 személynap
-
-#### 9.3.4.  Termékek kezeléséhez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)
-
-Felelős: Hirsch Ábel
-
-Tartam:  4 nap
-
-Erőforrásigény:  2 személynap
-
-#### 9.3.5.  Termékek kezeléséhez kapcsolódó GUI megvalósítása
-
-Felelős: Pető Patrik
-
-Tartam:  3 nap
-
-Erőforrásigény:  1 személynap
-
-#### 9.3.6.  Termékek kezeléséhez szükséges adatok létrehozása az adatbázisban
+#### 9.3.2.  Felhasználói adatbázisok elkészítése
 
 Felelős: Tóth János
 
@@ -309,7 +290,31 @@ Tartam:  3 nap
 
 Erőforrásigény:  1 személynap
 
-#### 9.3.7.  Kosár kezeléshez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)
+#### 9.3.3.  Felhasználói adatok létrehozása az adatbázisban
+
+Felelős: Honti Szabolcs
+
+Tartam:  2 nap
+
+Erőforrásigény:  1 személynap
+
+#### 9.3.4.  Termékek megjelenítéséhez kapcsolódó GUI megvalósítása
+
+Felelős: Pető Patrik
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.5.  Termékek kezeléséhez kapcsolódó GUI megvalósítása (módosítása, létrehozása, törlése)
+
+Felelős: Honti Szabolcs
+
+Tartam:  4 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.6.  Termékek kezeléséhez tartozó üzleti logika (módosítása, létrehozása, törlése)
 
 Felelős: Hirsch Ábel
 
@@ -317,31 +322,63 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.8.  Kosár kezeléshez kapcsolódó GUI megvalósítása
+#### 9.3.7.  Termékek létrehozása az adatbázisban
+
+Felelős: Tóth János
+
+Tartam:  2 nap
+
+Erőforrásigény:  1 személynap
+
+#### 9.3.8.  Kereséshez/szűréshez kapcsolódó GUI megvalósítása
 
 Felelős: Pető Patrik
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.9.  Termékek kereséséhez/szűréséhez tartozó üzleti logika
+
+Felelős: Hirsch Ábel
 
 Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.9.  Fizetés kezeléshez kapcsolódó GUI megvalósítása
+#### 9.3.10.  Kosárhoz kapcsolódó GUI megvalósítása
+
+Felelős: Tóth János
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.11.  Kosár kezeléshez tartozó üzleti logika (listázása, módosítása, létrehozása, törlése)
+
+Felelős: Hirsch Ábel
+
+Tartam:  3 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.12.  Fizetéshez kapcsolódó GUI megvalósítása
 
 Felelős: Pető Patrik
 
-Tartam:  5 nap
+Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.10.  Email-es kiértesítés új rendeléskor
+#### 9.3.13.  Rendelés kezeléshez tartozó üzleti logika (listázása, létrehozása)
 
-Felelős: Honti Szabolcs
+Felelős: Hirsch Ábel
 
-Tartam:  5 nap
+Tartam:  3 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.11.  Biztonsági mentés automatikus létrehozása
+#### 9.3.14.  Email-es kiértesítés új rendeléskor
 
 Felelős: Honti Szabolcs
 
@@ -349,7 +386,15 @@ Tartam:  4 nap
 
 Erőforrásigény:  2 személynap
 
-#### 9.3.12. Tesztelési dokumentum (TP, TC)
+#### 9.3.15.  Biztonsági mentés automatikus létrehozása
+
+Felelős: Honti Szabolcs
+
+Tartam:  4 nap
+
+Erőforrásigény:  2 személynap
+
+#### 9.3.16. Tesztelési dokumentum (TP, TC)
 
 Felelős: Mindenki
 
@@ -357,7 +402,7 @@ Tartam:  3 nap
 
 Erőforrásigény:  1 személynap/fő
 
-#### 9.3.13. Bemutató elkészítése 
+#### 9.3.17. Bemutató elkészítése 
 
 Felelős: Tóth János
 
@@ -455,7 +500,7 @@ Erőforrásigény:  0.3 személynap
 
 #### 9.4.13. Bemutató elkészítése 
 
-Felelős: Hirsch Ábel
+Felelős: Tóth János
 
 Tartam:  1 nap
 
@@ -484,20 +529,20 @@ Erőforrásigény:  1 személynap
 
 |                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     Honti Szabolcs         |            1           |              1             |            6            |            0.6           |    8.6    |
-|                     Hirsch Ábel            |            1           |              2             |            7            |            1.9           |    11.9   |
-|                     Pető Patrik            |            2           |              5             |            8            |            2.6           |    17.6   |
-|                     Tóth János             |            1           |              4             |            3            |             3            |    11     |
+|                     Honti Szabolcs         |            1           |              2             |            8            |            2.6           |    13.6   |
+|                     Hirsch Ábel            |            1           |              2             |            9            |            0.9           |    12.9   |
+|                     Pető Patrik            |            2           |              3             |            9            |            0.6           |    14.6   |
+|                     Tóth János             |            1           |              2             |            6            |             4            |    13     |
 
 
 ### 11.2. Részletes feladatszámok
 
 |                     Név                    | 1. leadás - Projektterv | 2. leadás - UML és adatbázis | 3. leadás - Prototípus I. | 4. leadás - Prototípus II. | Összesen |
 |:------------------------------------------:|:----------------------:|:--------------------------:|:-----------------------:|:------------------------:|:---------:|
-|                     Honti Szabolcs         |            1           |              1             |            4            |             3            |      9    |
-|                     Hirsch Ábel            |            1           |              2             |            4            |             4            |     11    |
+|                     Honti Szabolcs         |            1           |              2             |            5            |             3            |     11    |
+|                     Hirsch Ábel            |            1           |              1             |            5            |             3            |     10    |
 |                     Pető Patrik            |            2           |              2             |            5            |             2            |     11    |
-|                     Tóth János             |            1           |              2             |            3            |             2            |      8    |
+|                     Tóth János             |            1           |              2             |            5            |             3            |     11    |
 
 ### 11.3. Részletes költségvetés
 
@@ -506,7 +551,7 @@ Erőforrásigény:  1 személynap
 |        Maximálisan választható pontszám %-ban |         10% (7)        |            30% (21)        |          50% (35)       |          30% (21)        | 100% (70) |
 |                     Honti Szabolcs            |           5            |             13             |          33             |            19            |    70     |
 |                     Hirsch Ábel               |           6            |             15             |          33             |            16            |    70     |
-|                     Pető Patrik               |           5            |             21             |          35             |             9            |    70     |
+|                     Pető Patrik               |           7            |             18             |          35             |            10            |    70     |
 |                     Tóth János                |           6            |             19             |          24             |            21            |    70     |
 
-Szeged, 2021-10-06.
+Szeged, 2021-10-07.
