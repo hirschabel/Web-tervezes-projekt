@@ -13,6 +13,9 @@
 |--------|--------------------------|--------------|-----------------|---------------------------------------------------------------|
 |  0.1   |  Tóth János              |  2021-10-01  |  Tervezet       |  Legelső verzió                                               |
 |  0.2   |  Mindenki                |  2021-10-07  |  Előterjesztés  |  A projekt menedzsere jónak találta                           |
+|  1.0   |  Mindenki                |  2021-10-15  |  Elfogadott     |  Apróbb átszervezések a kommentek alapján                     |
+|  1.1   |  Mindenki                |  2021-10-20  |  Tervezet       |  Diagramok elkészítése                                        |
+|  1.2   |  Hirsch Ábel             |  2021-10-20  |  Előterjesztés  |   A projekt menedzsere jónak találta                          |
 
 
 Státusz osztályozás:
@@ -136,6 +139,12 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Hely: Online
  - Résztvevők: Hirsch Ábel, Pető Patrik
  - Érintett témák: Projektterv javítása a megrendelő kérésére
+ 
+6. megbeszélés:
+ - Időpont: 2021.10.20.
+ - Hely: Online
+ - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
+ - Érintett témák: A második mérföldkő feladatainak áttekintése
 
 
 ### 7.3. Minőségbiztosítás
@@ -170,10 +179,10 @@ A főbb átadandók és határidők a projekt időtartama alatt a következők:
 
 | Szállítandó |                 Neve                |   Határideje  |
 |:-----------:|:-----------------------------------:|:-------------:|
-|      D1     |       Projektterv és útmutató       | 2021-10-07  |
-|    P1+D2    | UML, DB, képernyőtervek és bemutató | 2021-10-21  |
-|    P1+D3    |      Prototípus I. és bemutató      | 2021-11-11  |
-|    P2+D4    |      Prototípus II. és bemutató     | 2021-12-02  |
+|      D1     |       Projektterv és útmutató       | 2021-10-07    |
+|    P1+D2    | UML, DB, képernyőtervek és bemutató | 2021-10-21    |
+|    P1+D3    |      Prototípus I. és bemutató      | 2021-11-11    |
+|    P2+D4    |      Prototípus II. és bemutató     | 2021-12-02    |
 
 ## 9. Feladatlista
 
