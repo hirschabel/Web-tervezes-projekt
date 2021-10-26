@@ -1,12 +1,12 @@
 const express = require("express");
 const router = express.Router();
 const UserDAO = require('../dao/user-dao');
+
+
+router.get("/profile", async (req, res) => {
+	return res.render("profile-user");
+});
 /*
-router.get("/", async (req, res) => {
-    let dogs = await new DogDAO().getDogs();
-    return res.render('index',{ dogs : dogs });
-  });
-  
 router.post("/add", async (req, res) => {
   let {name} = req.body;
   let {age} = req.body;

@@ -13,28 +13,22 @@
 		<nav>
 			<a href="/">Termékek</a>
 			<a href="/register">Regisztráció</a>
-			<a href="/login">Bejelentkezés</a>
-			<!-- ha user akkor csak logout + admin linkje -->
 		</nav>
 		<section>
 			<aside>
-				<ul>
-					<li><a href="#">Termékfajta1</a></li>
-					<!--
-						Ide jöhetnek a termékekfajták
-						vagy semmi ha olyan oldalon van. pl regisztráció, bejelentkezés, termékek stb.
-					-->
-				</ul>
+				<p>Hili hali haliho</p>
 			</aside>
 			<article>
-				<!--
-					Ide jöhetnek a termékek felsorolva
-					A regisztráció
-					Bejelentkezés
-					Egy termék
-					Termék modositása, készitése adminnak
-					Rendelések kilistázása
-				-->
+				<h2>Belépés</h2>
+				<form action="/login" method="post"><!-- TODO register/??? -->
+					<label>Név:
+						<input type="text" id="name" name="name"></input>
+					</label></br>
+					<label>Jelszó:
+						<input type="text" id="password" name="password"></input>
+					</label></br>
+					<input type="submit" value="Belépés"></input>
+				</form>
 			</article>
 		</section>
 		<footer>
