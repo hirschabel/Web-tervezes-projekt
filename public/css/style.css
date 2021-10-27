@@ -58,6 +58,30 @@ footer {
 	background-color:teal;
 	padding: 10px;
 }
+
+article div {
+	background-color: crimson;
+	border-style: solid;
+	text-align: center;
+	display:inline-block;
+	width:200px;
+	height:240px;
+	margin:5px;
+	cursor: pointer;
+}
+
+article div p {
+	height: 10%;
+}
+
+.name {
+	background-color: darkmagenta;
+}
+
+.price {
+	background-color: darkred;
+}
+
 /* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
 @media (max-width: 600px) {
 	section {

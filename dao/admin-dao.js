@@ -1,7 +1,7 @@
 const db = require('../config/db');
 
-class GuestDAO {
+class AdminDAO {
 	// ide
 };
-
-module.exports = GuestDAO;
+	
+module.exports = AdminDAO;
