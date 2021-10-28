@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Webshop</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<h2>Webshop</h2>
+		</header>
+		<nav>
+			<a href="/">Termékek</a>
+			<a>Kijelentkezés</a>
+			<!-- ha user akkor csak logout + admin linkje -->
+		</nav>
+		<section>
+			<aside>
+				<ul>
+					<li><a href="#">Termékfajta1</a></li>
+					<!--
+						Ide jöhetnek a termékekfajták
+						vagy semmi ha olyan oldalon van. pl regisztráció, bejelentkezés, termékek stb.
+					-->
+				</ul>
+			</aside>
+			<article>
+				<table onclick="location.href='#';">
+                    <tr>
+                        <td rowspan="2"><image src="https://www.w3schools.com/images/picture.jpg" alt=":desc" width="180" height="180"></image></td>
+                        <td class="name">:nev</td>
+                        <td class="kihagy"></td>
+                        <td class="price">:ár</td>
+                        <td><button id="kosar">Kosárba</button></td>
+                    </tr>
+                    <tr>
+                        <td class="">Fő/Fontos információ</td>
+                        <td colspan="2" class="kihagy"></td>
+                        <td><button>Módosítás</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" id="spec">Termék specifikációi
+                            <ul>
+                                <li>valami</li>
+                                <li>stb</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+			</article>
+		</section>
+		<footer>
+			<p>Footer</p>
+		</footer>
+  	</body>
+</html>

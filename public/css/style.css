@@ -89,3 +89,20 @@ article div p {
 	  	flex-direction: column;
 	}
 }
+
+.kihagy {
+	width: 800px;
+}
+
+#kosar {
+	height: 50px;
+}
+
+table {
+	border-collapse: collapse;
+	background-color: darksalmon;
+}
+
+#spec {
+	background-color: white;
+}
