@@ -16,21 +16,19 @@
 			<!-- ha admin akkor itt lesz + link -->
 		</nav>
 		<section>
-			<aside>
-				<p>Hili hali haliho</p>
-			</aside>
+			<aside></aside>
 			<article>
 				<h2>Adatlap</h2>
 				<p>
-					Név: user.name</br>
-					Email cím: user.email</br>
-					Lakcím: user.address</br>
-					Születésnap: user.birthday</br>
+					<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
+					<% user = {"name":"Kovács Dávid", "email":"azigazikovi@gmail.com", "address":"in your mom", "birthday":"2000.01.01."} %>
+					Név: <%= user.name%></br>
+					Email cím: <%= user.email%></br>
+					Lakcím: <%= user.address%></br>
+					Születésnap: <%= user.birthday%></br>
 				</p>
 			</article>
 		</section>
-		<footer>
-			<p>Footer</p>
-		</footer>
+		<footer></footer>
   	</body>
 </html>

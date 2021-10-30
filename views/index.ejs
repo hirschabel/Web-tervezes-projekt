@@ -18,24 +18,41 @@
 		</nav>
 		<section>
 			<aside>
+				<form action="/search">
+					<input type="text" name="search">
+					<button type="submit">Keresés</button>
+				</form>
+				<hr>
 				<ul>
-					<li><a href="#">Termékfajta1</a></li>
-					<!--
-						Ide jöhetnek a termékekfajták
-						vagy semmi ha olyan oldalon van. pl regisztráció, bejelentkezés, termékek stb.
-					-->
+					<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
+					<% product_types = [
+						{"name":"asd"},
+						{"name":"xd"},
+						{"name":"mukodik"},
+						{"name":"a fasze vagyok huulye"}
+					] %>
+					<% for (const pt of product_types) { %>
+						<li><a href="filter/<%= pt.name%>"><%= pt.name%></a></li>
+					<% } %>
 				</ul>
 			</aside>
 			<article>
-				<div onclick="location.href='#';">
-					<image src="https://www.w3schools.com/images/picture.jpg" alt=":desc" width="180" height="180"></image>
-					<p class="name">:nev</p>
-					<p class="price">:ár</p>
-				</div>
+				<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
+				<% products = [
+					{"name":"asd", "price":"300ft", "desc":"whatthefuckisapicture", "image":"mi-a-fasz.jpg"},
+					{"name":"xd", "price":"300ft", "desc":"this a pic", "image":"mi-a-fasz2.jpg"},
+					{"name":"mukodik", "price":"30123yxdfft", "desc":"dic pic", "image":"mi-a-fasz.jpg"},
+					{"name":"a fasze vagyok huulye", "price":"69ft", "desc":"kettoharomnegy5", "image":"mi-a-asz.jpg"}
+				] %>
+				<% for (const product of products) { %>
+					<div onclick="location.href='/product/<%= product.name%>'">
+						<image src="images/<%= product.image%>" alt="<%= product.desc%>" width="180" height="180"></image>
+						<p class="name"><%= product.name%></p>
+						<p class="price"><%= product.price%></p>
+					</div>
+				<% } %>
 			</article>
 		</section>
-		<footer>
-			<p>Footer</p>
-		</footer>
+		<footer></footer>
   	</body>
 </html>

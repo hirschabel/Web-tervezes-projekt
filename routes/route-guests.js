@@ -8,20 +8,19 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/register", async (req, res) => {
-	return res.render("register-guest");
-});
-
-router.get("/db", async (req, res) => {
-	pool.connect();
-	return res.render("register-guest");
+	return res.render("register");
 });
 
 router.get("/login", async (req, res) => {
-	return res.render("login-guest");
+	return res.render("login");
 });
 
 router.get("/profile", async (req, res) => {
-	return res.render("profile-user");
+	return res.render("profile");
+});
+
+router.get("/product", async (req, res) => {
+	return res.render("product");
 });
 
 module.exports = router;
