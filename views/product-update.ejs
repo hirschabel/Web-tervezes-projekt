@@ -13,32 +13,22 @@
 		<nav>
 			<a href="/">Termékek</a>
 			<a>Kijelentkezés</a>
-			<!-- ha user akkor csak logout + admin linkje -->
+			<!-- ha user akkor csak logout + admin linkje 
+			
+			-->
 		</nav>
 		<section>
 			<aside></aside>
 			<article>
-				<table>
-                    <tr>
-                        <td rowspan="2"><image src="../images/<%= termek.kep%>" alt="<%=termek.nev%>" width="180" height="180"></image> <input type="text" size="20" maxlength="250" values="új kép neve" /></td>
-                        <td class="name"><%=termek.nev%> <input type="text" size="20" maxlength="250" values="új név" /></td>
-                        <td class="kihagy"></td>
-                        <td class="price"><%=termek.ar%> Ft <input type="number" values="új ár" /></td>
-                        <td><button id="kosar">Kosárba</button></td>
-                    </tr>
-                    <tr>
-                        <td class="kihagy"></td>
-                        <td colspan="2" class="kihagy"></td>
-                        <td><button>Módosítás</button></td>
-                    </tr>
-                    <tr>
-                        <td colspan="5" id="spec">Termék leírás
-                            <ul>
-                                <li><%=termek.leiras%> <input type="text" size="100" maxlength="250" values="új leírás" /></li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+				<form action="/update/<%= termek.nev%>" method="post">
+					<input type="number" name="ar" id="ar" values="új ár" />
+					<input type="text" name="leiras" id="leiras" size="100" maxlength="250" values="új leírás" />
+					<input type="text" name="kep" id="kep" size="20" maxlength="250" values="új kép neve" />
+					<input type="submit" value="Submit" class="btn-sm btn-dark details"></input>
+				</form>
+				<form action="/delete/<%= termek.nev %>" method="post">
+					<button class="btn-sm btn-dark details" value="delete">Delete</button></a>
+				 </form>
 			</article>
 		</section>
 		<footer></footer>
