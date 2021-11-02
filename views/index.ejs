@@ -65,7 +65,7 @@
 			<article>
 				<% for (const termek of termekek) { %>
 					<div onclick="location.href='/product/<%= termek.nev%>'">
-						<image src="images/product/<%= termek.nev%>" alt="<%= termek.nev%>" width="180" height="180" onerror="this.src='image/product/product.jpg';"></image>
+						<image src="image/product/<%= termek.kep%>" alt="<%= termek.nev%>" width="180" height="180" onerror="this.src='image/product/product.jpg';"></image>
 						<p class="name"><%= termek.nev%></p>
 						<p class="price"><%= termek.ar%> Ft</p>
 					</div>
