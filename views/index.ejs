@@ -38,17 +38,12 @@
 			</aside>
 			<article>
 				<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
-				<% products = [
-					{"name":"asd", "price":"300ft", "desc":"whatthefuckisapicture", "image":"mi-a-fasz.jpg"},
-					{"name":"xd", "price":"300ft", "desc":"this a pic", "image":"mi-a-fasz2.jpg"},
-					{"name":"mukodik", "price":"30123yxdfft", "desc":"dic pic", "image":"mi-a-fasz.jpg"},
-					{"name":"a fasze vagyok huulye", "price":"69ft", "desc":"kettoharomnegy5", "image":"mi-a-asz.jpg"}
-				] %>
-				<% for (const product of products) { %>
-					<div onclick="location.href='/product/<%= product.name%>'">
-						<image src="images/<%= product.image%>" alt="<%= product.desc%>" width="180" height="180"></image>
-						<p class="name"><%= product.name%></p>
-						<p class="price"><%= product.price%></p>
+				
+				<% for (const termek of termekek) { %>
+					<div onclick="location.href='/product/<%= termek.nev%>'">
+						<image src="images/<%= termek.kep%>" alt="<%= termek.nev%>" width="180" height="180"></image>
+						<p class="name"><%= termek.nev%></p>
+						<p class="price"><%= termek.ar%> Ft</p>
 					</div>
 				<% } %>
 			</article>

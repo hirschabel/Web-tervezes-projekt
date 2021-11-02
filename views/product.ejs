@@ -18,24 +18,23 @@
 		<section>
 			<aside></aside>
 			<article>
-				<table onclick="location.href='#';">
+				<table>
                     <tr>
-                        <td rowspan="2"><image src="https://www.w3schools.com/images/picture.jpg" alt=":desc" width="180" height="180"></image></td>
-                        <td class="name">:nev</td>
+                        <td rowspan="2"><image src="../images/<%= termek.kep%>" alt="<%=termek.nev%>" width="180" height="180"></image></td>
+                        <td class="name"><%=termek.nev%></td>
                         <td class="kihagy"></td>
-                        <td class="price">:ár</td>
+                        <td class="price"><%=termek.ar%> Ft</td>
                         <td><button id="kosar">Kosárba</button></td>
                     </tr>
                     <tr>
-                        <td class="">Fő/Fontos információ</td>
+                        <td class="kihagy"></td>
                         <td colspan="2" class="kihagy"></td>
                         <td><button>Módosítás</button></td>
                     </tr>
                     <tr>
-                        <td colspan="5" id="spec">Termék specifikációi
+                        <td colspan="5" id="spec">Termék leírás
                             <ul>
-                                <li>valami</li>
-                                <li>stb</li>
+                                <li><%=termek.leiras%></li>
                             </ul>
                         </td>
                     </tr>
