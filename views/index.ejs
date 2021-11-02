@@ -27,8 +27,34 @@
 					<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
 					<% product_types = [
 						{"name":"asd"},
+						{"name":"termékfajta0"},
+						{"name":"mukodik"},
+						{"name":"termékfajta13"},
+						{"name":"asd"},
 						{"name":"xd"},
 						{"name":"mukodik"},
+						{"name":"a fasze vagyok huulye"},
+						{"name":"asd"},
+						{"name":"xd"},
+						{"name":"mukodik"},
+						{"name":"termékfajta1"},
+						{"name":"atermékfajta6"},
+						{"name":"xd"},
+						{"name":"mukodik"},
+						{"name":"a fasze vagyok huulye"},
+						{"name":"asd"},
+						{"name":"mukodik"},
+						{"name":"a fasze vagyok huulye"},
+						{"name":"asd"},
+						{"name":"xd"},
+						{"name":"mukodik"},
+						{"name":"termékfajta169"},
+						{"name":"asd"},
+						{"name":"xd"},
+						{"name":"mukodik"},
+						{"name":"a fasze vagyok huulye"},
+						{"name":"asd"},
+
 						{"name":"a fasze vagyok huulye"}
 					] %>
 					<% for (const pt of product_types) { %>
@@ -37,11 +63,9 @@
 				</ul>
 			</aside>
 			<article>
-				<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
-				
 				<% for (const termek of termekek) { %>
 					<div onclick="location.href='/product/<%= termek.nev%>'">
-						<image src="images/<%= termek.kep%>" alt="<%= termek.nev%>" width="180" height="180"></image>
+						<image src="image/product/<%= termek.kep%>" alt="<%= termek.nev%>" width="180" height="180" onerror="this.src='image/product/product.jpg';"></image>
 						<p class="name"><%= termek.nev%></p>
 						<p class="price"><%= termek.ar%> Ft</p>
 					</div>

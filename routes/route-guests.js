@@ -26,6 +26,7 @@ router.get("/product/:nev", async (req, res) => {
 	return res.render("product", {termek : termek});
 });
 
+
 router.get("/product-update/:nev", async (req, res) => {
 	let nev = req.params.nev;
 	let termek = await new GuestDAO().getOneProduct(nev);
@@ -48,5 +49,8 @@ router.post("/delete/:nev", async (req, res) => {
     res.redirect("/");
 });
 
+router.get("/payment", async (req, res) => {
+	return res.render("payment");
+});
 
 module.exports = router;
