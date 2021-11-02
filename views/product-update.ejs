@@ -20,10 +20,10 @@
 			<article>
 				<table>
                     <tr>
-                        <td rowspan="2"><image src="../images/<%= termek.kep%>" alt="<%=termek.nev%>" width="180" height="180"></image></td>
-                        <td class="name"><%=termek.nev%></td>
+                        <td rowspan="2"><image src="../images/<%= termek.kep%>" alt="<%=termek.nev%>" width="180" height="180"></image> <input type="text" size="20" maxlength="250" values="új kép neve" /></td>
+                        <td class="name"><%=termek.nev%> <input type="text" size="20" maxlength="250" values="új név" /></td>
                         <td class="kihagy"></td>
-                        <td class="price"><%=termek.ar%> Ft</td>
+                        <td class="price"><%=termek.ar%> Ft <input type="number" values="új ár" /></td>
                         <td><button id="kosar">Kosárba</button></td>
                     </tr>
                     <tr>
@@ -34,7 +34,7 @@
                     <tr>
                         <td colspan="5" id="spec">Termék leírás
                             <ul>
-                                <li><%=termek.leiras%></li>
+                                <li><%=termek.leiras%> <input type="text" size="100" maxlength="250" values="új leírás" /></li>
                             </ul>
                         </td>
                     </tr>

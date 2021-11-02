@@ -4,7 +4,8 @@ const router = express.Router();
 const GuestDAO = require('../dao/guest-dao');
 
 router.get("/", async (req, res) => {
-	return res.render("index");
+	let termekek = await new GuestDAO().getProducts();
+	return res.render("index", {termekek : termekek});
 });
 
 router.get("/register", async (req, res) => {
@@ -19,8 +20,10 @@ router.get("/profile", async (req, res) => {
 	return res.render("profile");
 });
 
-router.get("/product", async (req, res) => {
-	return res.render("product");
+router.get("/product/:nev", async (req, res) => {
+	let nev = req.params.nev;
+	let termek = await new GuestDAO().getOneProduct(nev);
+	return res.render("product", {termek : termek});
 });
 
 router.get("/payment", async (req, res) => {

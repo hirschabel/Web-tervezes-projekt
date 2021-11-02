@@ -63,12 +63,11 @@
 				</ul>
 			</aside>
 			<article>
-				<% for (const product of products) {
-					let image = product.image; %>
-					<div onclick="location.href='/product/<%= product.name%>'">
-						<image src="image/product/<%= image%>" alt="<%= product.name%>" width="180" height="180" onerror="this.src='image/product/product.jpg';"></image>
-						<p><%= product.name%></p>
-						<p><%= product.price%></p>
+				<% for (const termek of termekek) { %>
+					<div onclick="location.href='/product/<%= termek.nev%>'">
+						<image src="images/product/<%= termek.nev%>" alt="<%= termek.nev%>" width="180" height="180" onerror="this.src='image/product/product.jpg';"></image>
+						<p class="name"><%= termek.nev%></p>
+						<p class="price"><%= termek.ar%> Ft</p>
 					</div>
 				<% } %>
 			</article>
