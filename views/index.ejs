@@ -27,8 +27,34 @@
 					<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
 					<% product_types = [
 						{"name":"asd"},
+						{"name":"termékfajta0"},
+						{"name":"mukodik"},
+						{"name":"termékfajta13"},
+						{"name":"asd"},
 						{"name":"xd"},
 						{"name":"mukodik"},
+						{"name":"a fasze vagyok huulye"},
+						{"name":"asd"},
+						{"name":"xd"},
+						{"name":"mukodik"},
+						{"name":"termékfajta1"},
+						{"name":"atermékfajta6"},
+						{"name":"xd"},
+						{"name":"mukodik"},
+						{"name":"a fasze vagyok huulye"},
+						{"name":"asd"},
+						{"name":"mukodik"},
+						{"name":"a fasze vagyok huulye"},
+						{"name":"asd"},
+						{"name":"xd"},
+						{"name":"mukodik"},
+						{"name":"termékfajta169"},
+						{"name":"asd"},
+						{"name":"xd"},
+						{"name":"mukodik"},
+						{"name":"a fasze vagyok huulye"},
+						{"name":"asd"},
+
 						{"name":"a fasze vagyok huulye"}
 					] %>
 					<% for (const pt of product_types) { %>
@@ -37,18 +63,12 @@
 				</ul>
 			</aside>
 			<article>
-				<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
-				<% products = [
-					{"name":"asd", "price":"300ft", "desc":"whatthefuckisapicture", "image":"mi-a-fasz.jpg"},
-					{"name":"xd", "price":"300ft", "desc":"this a pic", "image":"mi-a-fasz2.jpg"},
-					{"name":"mukodik", "price":"30123yxdfft", "desc":"dic pic", "image":"mi-a-fasz.jpg"},
-					{"name":"a fasze vagyok huulye", "price":"69ft", "desc":"kettoharomnegy5", "image":"mi-a-asz.jpg"}
-				] %>
-				<% for (const product of products) { %>
+				<% for (const product of products) {
+					let image = product.image; %>
 					<div onclick="location.href='/product/<%= product.name%>'">
-						<image src="images/<%= product.image%>" alt="<%= product.desc%>" width="180" height="180"></image>
-						<p class="name"><%= product.name%></p>
-						<p class="price"><%= product.price%></p>
+						<image src="image/product/<%= image%>" alt="<%= product.name%>" width="180" height="180" onerror="this.src='image/product/product.jpg';"></image>
+						<p><%= product.name%></p>
+						<p><%= product.price%></p>
 					</div>
 				<% } %>
 			</article>

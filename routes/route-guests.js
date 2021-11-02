@@ -23,4 +23,8 @@ router.get("/product", async (req, res) => {
 	return res.render("product");
 });
 
+router.get("/payment", async (req, res) => {
+	return res.render("payment");
+});
+
 module.exports = router;
