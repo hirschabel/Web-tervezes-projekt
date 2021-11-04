@@ -53,4 +53,36 @@ router.get("/payment", async (req, res) => {
 	return res.render("payment");
 });
 
+router.post('/pay', async (req, res) => {
+	const nodemailer = require('nodemailer');
+
+	let {email} = req.body;
+	let {kosar} = req.body;
+
+	let transporter = nodemailer.createTransport({
+	    service: 'gmail',
+	    auth: {
+	        user: 'webshop6656@gmail.com',
+	        pass: '123Webshop123'
+	    }
+	});
+
+	let mailOptions = {
+	    from: 'webshop6656@gmail.com',
+	    to: email,
+	    subject: 'Vásárlás',
+	    text: `Kedves Vásárló!\nÖn megvaásárolta az alábbi termékeket:\n${kosar}`
+	};
+
+	transporter.sendMail(mailOptions, function(err, data) {
+	    if(err) {
+	        console.log('Error Occurs: ', err);
+	    } else {
+	        console.logg('Email sent!!!!');
+	    }
+	});
+
+	res.redirect('/');
+});
+
 module.exports = router;

@@ -1,7 +1,6 @@
 {
   "name": "webshop",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon server.js",
@@ -10,9 +9,18 @@
   "dependencies": {
     "ejs": "^3.1.5",
     "express": "^4.17.1",
+    "nodemailer": "^6.7.0",
     "pg": "^8.5.1"
   },
   "devDependencies": {
     "nodemon": "^2.0.12"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab-okt.sed.hu/2021_IB153I-7_webshop/webshop"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }

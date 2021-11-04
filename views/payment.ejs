@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<title>Webshop</title>
 		<link href="/css/style.css" rel="stylesheet" type="text/css">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta nev="viewport" content="width=device-width, initial-scale=1">
 	</head>
 	<body>
 		<header>
@@ -13,7 +13,7 @@
 		<nav>
 			<a href="/">Termékek</a>
 			<a href="/logout">Kijelentkezés</a>
-			<!-- ha user akkor csak logout + admin linkje -->
+			<!-- ha felhasznalo akkor csak logout + admin linkje -->
 		</nav>
 		<section>
 			<aside></aside>
@@ -21,43 +21,50 @@
 				<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
 				<h2>Rendelés</h2>
 				<h3>Kosár tartalma:</h3>
-				<% let cart = [
-					{"name":"asd", "price":300, "image_desc":"whatthefuckisapicture", "image":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
-					{"name":"xd", "price":300, "image_desc":"this a pic", "image":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
-					{"name":"mukodik", "price":30123, "image_desc":"dic pic", "image":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
-					{"name":"asd", "price":300, "image_desc":"whatthefuckisapicture", "image":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
-					{"name":"xd", "price":300, "image_desc":"this a pic", "image":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
-					{"name":"mukodik", "price":30123, "image_desc":"dic pic", "image":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
-					{"name":"asd", "price":300, "image_desc":"whatthefuckisapicture", "image":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
-					{"name":"xd", "price":300, "image_desc":"this a pic", "image":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
-					{"name":"mukodik", "price":30123, "image_desc":"dic pic", "image":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
-					{"name":"asd", "price":300, "image_desc":"whatthefuckisapicture", "image":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
-					{"name":"xd", "price":300, "image_desc":"this a pic", "image":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
-					{"name":"mukodik", "price":30123, "image_desc":"dic pic", "image":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
-					{"name":"a fasze vagyok huulye", "price":69, "image_desc":"kettoharomnegy5", "image":"mi-a-fasz.jpg", desc:"Desc4", quantity:42 }
+				<% let kosar = [
+					{"nev":"asd", "ar":300, "kep":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
+					{"nev":"xd", "ar":300, "kep":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
+					{"nev":"mukodik", "ar":30123, "kep":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
+					{"nev":"asd", "ar":300, "kep":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
+					{"nev":"xd", "ar":300, "kep":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
+					{"nev":"mukodik", "ar":30123, "kep":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
+					{"nev":"asd", "ar":300, "kep":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
+					{"nev":"xd", "ar":300, "kep":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
+					{"nev":"mukodik", "ar":30123, "kep":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
+					{"nev":"asd", "ar":300, "kep":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
+					{"nev":"xd", "ar":300, "kep":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
+					{"nev":"mukodik", "ar":30123, "kep":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
+					{"nev":"a fasze vagyok huulye", "ar":69, "kep":"mi-a-fasz.jpg", desc:"Desc4", quantity:42 }
 				];
 				let total = 0;
+				let s = '';
 				%>
 				<table>
 					<th>Név</th>
 					<th>Forint</th>
 					<th>Darab</th>
-				<% for (const product of cart) { 
-					total += product.price * product.quantity; %>	
+				<% for (const termek of kosar) { 
+					total += termek.ar * termek.quantity; 
+					s += termek.nev;
+					if(termek != kosar[kosar.length - 1]) {
+						s += ", ";
+					}%>	
 						<tr>
-							<td><%= product.name%></td>
-							<td><%= product.price%></td>
-							<td><%= product.quantity%></td>
+							<td><%= termek.nev%></td>
+							<td><%= termek.ar%></td>
+							<td><%= termek.quantity%></td>
 						</tr>
 				<% } %>
 				</table>
 				<h3>Szállítási cím</h3>
-				<form action="/payment" method="post">
+				<form action="/pay" method="post">
 					<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
-					<% let user = {"name":"Kovács Dávid", "email":"azigazikovi@gmail.com", "address":"in your mom", "birthday":"2000.01.01."} %>
-					<input type="text" id="address" name="address" value="<%= user.address%>"></input>
+					<% let felhasznalo = {"nev":"Kovács Dávid", "email":"honti.szabolcs123@gmail.com", "lakcim":"in your mom", "szuldatum":"2000.01.01."} %>
+					<input type="text" id="lakcim" nev="lakcim" value="<%= felhasznalo.lakcim%>"></input>
 					</br>
 					<h3>Végösszeg: <%= total%> HUF</h3>
+					<input hidden type="text" id="kosar" name="kosar" value="<%= s%>"></input>
+					<input hidden type="text" id="email" name="email" value="<%= felhasznalo.email%>"></input>
 					<button type="submit">Megrendelem</button>
 				</form>
 			</article>
