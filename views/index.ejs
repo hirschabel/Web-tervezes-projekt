@@ -18,54 +18,21 @@
 		</nav>
 		<section>
 			<aside>
-				<form action="/search">
-					<input type="text" name="search">
+				<form action="/search" method="post">
+					<input type="text" name="nev">
 					<button type="submit">Keresés</button>
 				</form>
 				<hr>
 				<ul>
-					<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
-					<% product_types = [
-						{"name":"asd"},
-						{"name":"termékfajta0"},
-						{"name":"mukodik"},
-						{"name":"termékfajta13"},
-						{"name":"asd"},
-						{"name":"xd"},
-						{"name":"mukodik"},
-						{"name":"a fasze vagyok huulye"},
-						{"name":"asd"},
-						{"name":"xd"},
-						{"name":"mukodik"},
-						{"name":"termékfajta1"},
-						{"name":"atermékfajta6"},
-						{"name":"xd"},
-						{"name":"mukodik"},
-						{"name":"a fasze vagyok huulye"},
-						{"name":"asd"},
-						{"name":"mukodik"},
-						{"name":"a fasze vagyok huulye"},
-						{"name":"asd"},
-						{"name":"xd"},
-						{"name":"mukodik"},
-						{"name":"termékfajta169"},
-						{"name":"asd"},
-						{"name":"xd"},
-						{"name":"mukodik"},
-						{"name":"a fasze vagyok huulye"},
-						{"name":"asd"},
-
-						{"name":"a fasze vagyok huulye"}
-					] %>
-					<% for (const pt of product_types) { %>
-						<li><a href="filter/<%= pt.name%>"><%= pt.name%></a></li>
+					<% for (const tag of tagek) { %>
+						<li><a href="/filter/<%= tag.nev%>"><%= tag.nev%></a></li>
 					<% } %>
 				</ul>
 			</aside>
 			<article>
 				<% for (const termek of termekek) { %>
 					<div onclick="location.href='/product/<%= termek.nev%>'">
-						<image src="image/product/<%= termek.kep%>" alt="<%= termek.nev%>" width="180" height="180" onerror="this.src='image/product/product.jpg';"></image>
+						<image src="../image/product/<%= termek.kep%>" alt="<%= termek.nev%>" width="180" height="180" onerror="this.src='../image/product/product.jpg';"></image>
 						<p class="name"><%= termek.nev%></p>
 						<p class="price"><%= termek.ar%> Ft</p>
 					</div>
