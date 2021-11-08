@@ -40,9 +40,10 @@
 				let s = '';
 				%>
 				<table>
-					<th>Név</th>
-					<th>Forint</th>
-					<th>Darab</th>
+					<th>Termék neve</th>
+					<th>Ár</th>
+					<th>Mennyiség</th>
+					<th>Módosítás
 				<% for (const termek of kosar) { 
 					total += termek.ar * termek.quantity; 
 					s += termek.nev;
@@ -53,6 +54,7 @@
 							<td><%= termek.nev%></td>
 							<td><%= termek.ar%></td>
 							<td><%= termek.quantity%></td>
+							<td><button type="submit">+</button> <button type="submit">-</button> <button type="submit">Törlés</button></td>
 						</tr>
 				<% } %>
 				</table>
