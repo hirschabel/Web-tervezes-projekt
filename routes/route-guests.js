@@ -43,7 +43,6 @@ router.get("/product-update/:nev", async (req, res) => {
 router.post("/search", async (req, res) => {
 	let {nev} = req.body;
 	let termekek = await new GuestDAO().getNevProduct(nev);
-	console.log(termekek);
 	let tagek = await new GuestDAO().getTags();
 	return res.render("index", {termekek : termekek, tagek : tagek});
 });
@@ -96,6 +95,29 @@ router.post('/pay', async (req, res) => {
 	    }
 	});
 
+	res.redirect('/');
+});
+
+router.get('/backup', async (req, res) => {
+	const { exec } = require('child_process');
+	const db = require('../config/db');
+
+	let dumpFile = 'config/dump.sql';
+
+	console.log(`Starting exporting data from the ${db.options.database} database`);
+
+	exec(`pg_dump postgres://${db.options.user}:${db.options.password}@${db.options.host}:${db.options.port}/${db.options.database} > ${dumpFile}`,  (err, stdout, stderr) => {
+		if (err) { console.error(`exec error: ${err}`); return; }
+
+		console.log(`Now, importing data to the ${db.options.database} database`);
+	
+		exec(`psql postgres://${db.options.user}:${db.options.password}@${db.options.host}:${db.options.port}/${db.options.database} < ${dumpFile}`, (err, stdout, stderr) => {
+	        if (err) { console.error(`exec error: ${err}`); return; }
+
+	        console.log(`The import has finished.`);
+		});
+
+	});
 	res.redirect('/');
 });
 
