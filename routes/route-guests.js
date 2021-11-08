@@ -5,7 +5,8 @@ const GuestDAO = require('../dao/guest-dao');
 
 router.get("/", async (req, res) => {
 	let termekek = await new GuestDAO().getProducts();
-	return res.render("index", {termekek : termekek});
+	let tagek = await new GuestDAO().getTags();
+	return res.render("index", {termekek : termekek, tagek : tagek});
 });
 
 router.get("/register", async (req, res) => {
@@ -26,6 +27,12 @@ router.get("/product/:nev", async (req, res) => {
 	return res.render("product", {termek : termek});
 });
 
+router.get("/filter/:tag", async (req, res) => {
+	let tag_nev = req.params.tag;
+	let termekek = await new GuestDAO().getTagsByID(tag_nev);
+	let tagek = await new GuestDAO().getTags();
+	return res.render("index", {termekek : termekek, tagek : tagek});
+});
 
 router.get("/product-update/:nev", async (req, res) => {
 	let nev = req.params.nev;
@@ -33,6 +40,13 @@ router.get("/product-update/:nev", async (req, res) => {
 	return res.render("product-update", {termek : termek});
 });
 
+router.post("/search", async (req, res) => {
+	let {nev} = req.body;
+	let termekek = await new GuestDAO().getNevProduct(nev);
+	console.log(termekek);
+	let tagek = await new GuestDAO().getTags();
+	return res.render("index", {termekek : termekek, tagek : tagek});
+});
 
 router.post("/update/:nev", async (req, res) => {
     let nev = req.params.nev;
