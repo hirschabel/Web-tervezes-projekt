@@ -151,5 +151,5 @@ table {
 
 /* CART GUI +/-/DELETE */
 td.borderless td {
-	border: 0;
+	border-style:hidden;
 }
