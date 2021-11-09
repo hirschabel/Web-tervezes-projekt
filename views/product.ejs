@@ -19,21 +19,21 @@
 		<section>
 			<aside></aside>
 			<article>
-				<table>
+				<table id="product_table">
                     <tr>
                         <td rowspan="2"><image src="../image/product/<%= termek.kep%>" alt="<%=termek.nev%>" width="180" height="180"></image></td>
-                        <td class="name"><%=termek.nev%></td>
+                        <td><%=termek.nev%></td>
                         <td class="kihagy"></td>
-                        <td class="price"><%=termek.ar%> Ft</td>
+                        <td><%=termek.ar%> Ft</td>
                         <td><button id="kosar">Kosárba</button></td>
                     </tr>
-                    <tr>
+                    <tr >
                         <td class="kihagy"></td>
                         <td colspan="2" class="kihagy"></td>
                         <td><button onclick="location.href='/product-update/<%= termek.nev%>'">Módosítás</button></td>
                     </tr>
                     <tr>
-                        <td colspan="5" id="spec">Termék leírás
+                        <td colspan="5">Termék leírás
                             <ul>
                                 <li><%=termek.leiras%></li>
                             </ul>

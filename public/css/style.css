@@ -131,7 +131,13 @@ button:hover {
 	  	flex-direction: column;
 	}
 }
-/*
+
+#product_table, #product_table tr, #product_table td, #product_table li {
+	border-style: hidden;
+	list-style-type: none;
+	text-align: left;
+}
+
 .kihagy {
 	width: 800px;
 }
@@ -139,12 +145,3 @@ button:hover {
 #kosar {
 	height: 50px;
 }
-
-table {
-	border-collapse: collapse;
-	background-color: darksalmon;
-}
-
-#spec {
-	background-color: white;
-}*/
