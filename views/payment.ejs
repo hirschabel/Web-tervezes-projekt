@@ -21,40 +21,28 @@
 				<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
 				<h2>Rendelés</h2>
 				<h3>Kosár tartalma:</h3>
-				<% let kosar = [
-					{"nev":"asd", "ar":300, "kep":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
-					{"nev":"xd", "ar":300, "kep":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
-					{"nev":"mukodik", "ar":30123, "kep":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
-					{"nev":"asd", "ar":300, "kep":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
-					{"nev":"xd", "ar":300, "kep":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
-					{"nev":"mukodik", "ar":30123, "kep":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
-					{"nev":"asd", "ar":300, "kep":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
-					{"nev":"xd", "ar":300, "kep":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
-					{"nev":"mukodik", "ar":30123, "kep":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
-					{"nev":"asd", "ar":300, "kep":"mi-a-fasz.jpg", desc:"Desc1", quantity:3 },
-					{"nev":"xd", "ar":300, "kep":"mi-a-fasz2.jpg", desc:"Desc69", quantity:2 },
-					{"nev":"mukodik", "ar":30123, "kep":"mi-a-fasz.jpg", desc:"Desc3", quantity:1 },
-					{"nev":"a fasze vagyok huulye", "ar":69, "kep":"mi-a-fasz.jpg", desc:"Desc4", quantity:42 }
-				];
-				let total = 0;
-				let s = '';
-				%>
+				
 				<table>
 					<th>Termék neve</th>
 					<th>Ár</th>
 					<th>Mennyiség</th>
 					<th>Módosítás
-				<% for (const termek of kosar) { 
-					total += termek.ar * termek.quantity; 
+				<%
+				let total = 0;
+				let s = '';
+				for (const termek of termekek) {
+					total += termek.ar * termek.darab; 
 					s += termek.nev;
-					if(termek != kosar[kosar.length - 1]) {
+					if(termek != termekek[termekek.length - 1]) {
 						s += ", ";
 					}%>	
 						<tr>
 							<td><%= termek.nev%></td>
 							<td><%= termek.ar%></td>
-							<td><%= termek.quantity%></td>
-							<td><button type="submit">+</button> <button type="submit">-</button> <button type="submit">Törlés</button></td>
+							<td><%= termek.darab%></td>
+							<td><button onclick="location.href='/kosar_modosit/<%= termek.nev%>/<%= termek.darab%>/+'" type="submit">+</button>
+								<button onclick="location.href='/kosar_modosit/<%= termek.nev%>/<%= termek.darab%>/-'"type="submit">-</button>
+								<button onclick="location.href='/kosar_modosit/<%= termek.nev%>/<%= termek.darab%>/d'"type="submit">Törlés</button></td>
 						</tr>
 				<% } %>
 				</table>
@@ -62,11 +50,12 @@
 				<form action="/pay" method="post">
 					<!-- MINTA: csak ezért van itt hogy meg lehessen nézni az oldalt. -->
 					<% let felhasznalo = {"nev":"Kovács Dávid", "email":"honti.szabolcs123@gmail.com", "lakcim":"in your mom", "szuldatum":"2000.01.01."} %>
-					<input type="text" id="lakcim" nev="lakcim" value="<%= felhasznalo.lakcim%>"></input>
+					<input type="text" id="szall_cim" nev="szall_cim" value="<%= felhasznalo.lakcim%>"></input>
 					</br>
 					<h3>Végösszeg: <%= total%> HUF</h3>
 					<input hidden type="text" id="kosar" name="kosar" value="<%= s%>"></input>
 					<input hidden type="text" id="email" name="email" value="<%= felhasznalo.email%>"></input>
+					<input hidden type="number" id="vegosszeg" name="vegosszeg" value="<%= total%>"></input>
 					<button type="submit">Megrendelem</button>
 				</form>
 			</article>

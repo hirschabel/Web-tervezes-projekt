@@ -40,6 +40,21 @@ router.get("/product-update/:nev", async (req, res) => {
 	return res.render("product-update", {termek : termek});
 });
 
+router.get("/kosarba/:nev", async(req, res) => {
+	let nev = req.params.nev;
+	await new GuestDAO().kosarba(5, nev); //NINCSENEK FELHASZNALOK
+	res.redirect("/");
+});
+
+router.get("/kosar_modosit/:nev/:darab/:operation", async(req, res) => {
+	let nev = req.params.nev;
+	let darab = req.params.darab;
+	let operation = req.params.operation;
+	await new GuestDAO().kosarModosit(5, nev, darab, operation);
+	res.redirect("/payment");
+
+});
+
 router.post("/search", async (req, res) => {
 	let {nev} = req.body;
 	let termekek = await new GuestDAO().getNevProduct(nev);
@@ -63,10 +78,16 @@ router.post("/delete/:nev", async (req, res) => {
 });
 
 router.get("/payment", async (req, res) => {
-	return res.render("payment");
+	let termekek = await new GuestDAO().getKosar(5); //NINCS FELHASZNALO LOGIKA
+	return res.render("payment", {termekek : termekek});
 });
 
 router.post('/pay', async (req, res) => {
+	let {szall_cim} = req.body;
+	let {vegosszeg} = req.body;
+	await new GuestDAO().rendelesLetrehozas(5, szall_cim, vegosszeg); //NINCS FELHASZNALO
+
+
 	const nodemailer = require('nodemailer');
 
 	let {email} = req.body;
