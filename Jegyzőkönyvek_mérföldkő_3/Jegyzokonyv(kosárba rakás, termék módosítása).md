@@ -55,6 +55,13 @@ Az alábbi tesztdokumentum a webshop projekthez tartozó 9.3.11.  Kosár kezelé
 - Művelet: nyomjuk meg a 'Mentés' gombot 
 - Elvárt kimenet: a megváltoztatott termék ára 100 lett, leírása 'megváltozott termék' lett és a product.jpg-t jeleníti meg
 
+#### 2.2.2. TC-02
+- TP: TP-02
+- Leírás: termékek módosítása funkció tesztelése
+- Bemenet: ár = 0, leírás = "", kép = "" 
+- Művelet: nyomjuk meg a 'Mentés' gombot 
+- Elvárt kimenet: a megváltoztatott termék ára 0 lett, leírása: nincs és a product.jpg-t jeleníti meg az főoldalon, a termék oldalán meg a termék nevét jeleníti meg
+
 ### 2.3. Termékek törlése funkció tesztesetei
 
 #### 2.3.1. TC-01
