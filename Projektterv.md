@@ -15,7 +15,10 @@
 |  0.2   |  Mindenki                |  2021-10-07  |  Előterjesztés  |  A projekt menedzsere jónak találta                           |
 |  1.0   |  Mindenki                |  2021-10-15  |  Elfogadott     |  Apróbb átszervezések a kommentek alapján                     |
 |  1.1   |  Mindenki                |  2021-10-20  |  Tervezet       |  Diagramok elkészítése                                        |
-|  1.2   |  Hirsch Ábel             |  2021-10-20  |  Előterjesztés  |   A projekt menedzsere jónak találta                          |
+|  1.2   |  Hirsch Ábel             |  2021-10-20  |  Előterjesztés  |  A projekt menedzsere jónak találta                           |
+|  2.0   |  Mindenki                |  2021-10-22  |  Elfogadott     |  Apróbb átszervezések a kommentek alapján                     |
+|  2.1   |  Mindenki                |  2021-11-01  |  Tervezet       |  Weboldal elkészítése                                         |
+|  2.1   |  Mindenki                |  2021-11-11  |  Előterjesztés  |  Jegyzőkönyvek elkészítése                                    |
 
 
 Státusz osztályozás:
@@ -86,10 +89,9 @@ A projekt a következő munkaállomásokat fogja használni a munka során:
 A projekt a következő technológiákat/szoftvereket fogja használni a munka során: 
  - Heroku platformszolgáltatás
  - Heroku által biztosított PostgreSQL adatbázisszerver
- - Spring Boot (backend)
- - React.js (frontend)
- - Maven szoftverprojekt menedzselő szoftver
- - Eclipse IDE
+ - Node.js
+ - Express (backend)
+ - EJS (frontend)
  - Visual Studio Code
  - Git verziókövető (GitLab)
 
@@ -145,6 +147,18 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Hely: Online
  - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
  - Érintett témák: A második mérföldkő feladatainak áttekintése
+
+7. megbeszélés:
+ - Időpont: 2021.11.01.
+ - Hely: Online
+ - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
+ - Érintett témák: Programkód és munkamemnet áttekintése
+
+ 8. megbeszélés:
+ - Időpont: 2021.11.11.
+ - Hely: Online
+ - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
+ - Érintett témák: Jegyzőkönyvek elkészítése
 
 
 ### 7.3. Minőségbiztosítás
