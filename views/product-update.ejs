@@ -22,13 +22,19 @@
 			<aside></aside>
 			<article>
 				<form action="/update/<%= termek.nev%>" method="post">
-					<input type="number" name="ar" id="ar" values="új ár" />
-					<input type="text" name="leiras" id="leiras" size="100" maxlength="250" values="új leírás" />
-					<input type="text" name="kep" id="kep" size="20" maxlength="250" values="új kép neve" />
-					<input type="submit" value="Submit" class="btn-sm btn-dark details"></input>
+					<p>Ár:</p>
+					<input type="number" name="ar" id="ar" values="új ár" placeholder="<%= termek.ar%>">
+					<br>
+					<p>Leírás:</p>
+					<input type="text" name="leiras" id="leiras" size="100" maxlength="250" values="új leírás" placeholder="<%= termek.leiras%>">
+					<br>
+					<p>Kép neve:</p>
+					<input type="text" name="kep" id="kep" size="20" maxlength="250" values="új kép neve" placeholder="<%= termek.kep%>">
+					<br>
+					<button type="submit" class="btn-sm btn-dark details">Mentés</button>
 				</form>
 				<form action="/delete/<%= termek.nev %>" method="post">
-					<button class="btn-sm btn-dark details" value="delete">Delete</button></a>
+					<button class="btn-sm btn-dark details" value="delete">Töröl</button></a>
 				 </form>
 			</article>
 		</section>
