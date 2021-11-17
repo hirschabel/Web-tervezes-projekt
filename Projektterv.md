@@ -154,11 +154,17 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
  - Érintett témák: Programkód és munkamemnet áttekintése
 
- 8. megbeszélés:
+8. megbeszélés:
  - Időpont: 2021.11.11.
  - Hely: Online
  - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
  - Érintett témák: Jegyzőkönyvek elkészítése
+
+9. megbeszélés:
+ - Időpont: 2021.11.17.
+ - Hely: Koli szoba
+ - Résztvevők: Hirsch Ábel, Pető Patrik, Honti Szabolcs
+ - Érintett témák: Negyedik mérföldkő átbeszélése, feladatok tisztázása
 
 
 ### 7.3. Minőségbiztosítás
@@ -540,9 +546,9 @@ Erőforrásigény:  1 személynap
 |                     Pető Patrik            |            Zöld          |
 |                     Tóth János             |            Piros         |
 
-![image](./feladat_diagram.png)
+![image](./Diagramok/feladat_diagram.png)
 
-![image](./emberek_diagram.png)
+![image](./Diagramok/emberek_diagram.png)
 
 
 ## 11. Projekt költségvetés
