@@ -11,6 +11,24 @@ router.get("/", async (req, res) => {
 
 router.get("/register", async (req, res) => {
 	return res.render("register");
+})
+
+router.post("/register", async (req, res) => {
+	let {nev} = req.body;
+	let {email} = req.body;
+	let {jelszo} = req.body;
+	let {cim} = req.body;
+	let {szuldatum} = req.body;
+
+	let letezik = await new GuestDAO().getFelhasznaloLetezik(nev);
+
+	if(!letezik) {
+		await new GuestDAO().register(nev, jelszo, email, cim, szuldatum);
+		res.render("login", {uzenet : `Sikeres regisztráció!`});
+	}
+	else {
+		return res.render("register", {uzenet : `A ${nev} nevű felhasználó már létezik!`});
+	}
 });
 
 router.get("/login", async (req, res) => {

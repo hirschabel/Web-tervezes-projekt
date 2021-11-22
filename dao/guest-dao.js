@@ -64,6 +64,14 @@ class GuestDAO {
 		let result = await db.query(`SELECT termek.nev, termek.ar, termek.leiras, termek.kep FROM tagek, tag_kapcs, termek WHERE tagek.id = tag_kapcs.id AND tag_kapcs.nev = termek.nev AND tagek.nev = '${tag_nev}';`).catch(console.log);
 		return result.rows;
 	}
+
+	async getFelhasznaloLetezik(nev) {
+		return await (await db.query(`SELECT * FROM felhasznalo WHERE nev = '${nev}';`)).rowCount > 0;
+	}
+
+	async register(nev, jelszo, email, cim, szuldatum) {
+		await db.query(`INSERT INTO felhasznalo(nev, szuldatum, lakcim, email, jelszo) VALUES('${nev}','${szuldatum}','${cim}','${email}','${jelszo}');`)
+	}
 };
 
 module.exports = GuestDAO;

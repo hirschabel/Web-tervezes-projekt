@@ -5,6 +5,9 @@
 		<title>Webshop</title>
 		<link href="/css/style.css" rel="stylesheet" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<%if(typeof uzenet !== "string") {
+			uzenet = "";
+		} %>
 	</head>
 	<body>
 		<header>
@@ -19,21 +22,22 @@
 			<aside></aside>
 			<article>
 				<h2>Regisztráció</h2>
+				<p><%= uzenet%></p>
 				<form action="/register" method="post">
 					<label>Név:
-						<input type="text" id="name" name="name"></input>
+						<input type="text" id="name" name="nev"></input>
 					</label></br>
 					<label>Email cím:
 						<input type="email" id="email" name="email"></input>
 					</label></br>
 					<label>Jelszó:
-						<input type="password" id="password" name="password"></input>
+						<input type="password" id="password" name="jelszo"></input>
 					</label></br>
 					<label>Lakcím:
-						<input type="text" id="address" name="address"></input>
+						<input type="text" id="address" name="cim"></input>
 					</label></br>
-					<label>Születésnap:
-						<input type="date" id="birthday" name="birthday"></input>
+					<label>Születési dátum:
+						<input type="date" id="birthday" name="szuldatum"></input>
 					</label></br>
 					<button type="submit" >Regisztráció</button>
 				  </form>

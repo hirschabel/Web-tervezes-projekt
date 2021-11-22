@@ -5,6 +5,9 @@
 		<title>Webshop</title>
 		<link href="/css/style.css" rel="stylesheet" type="text/css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<%if(typeof uzenet !== "string") {
+			uzenet = "";
+		}%>
 	</head>
 	<body>
 		<header>
@@ -19,6 +22,7 @@
 			<aside></aside>
 			<article>
 				<h2>Belépés</h2>
+				<p><%= uzenet%></p>
 				<form action="/login" method="post">
 					<label>Név:
 						<input type="text" id="name" name="name"></input>
