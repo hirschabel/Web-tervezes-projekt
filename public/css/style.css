@@ -23,7 +23,9 @@ nav {
 	-ms-flex: 1;
 	flex: 1;
 	background-color: #050617;
-	padding: 20px 0px;
+	padding: 10px 0px;
+	overflow: hidden;
+
 }
 /* */
 section {
@@ -33,15 +35,18 @@ section {
 /* EVERY LINK */
 a {
 	text-decoration: none;
-	background-color: #cccff0;
-	color:#050617;
+	color: #050617;
 }
 a:hover {
 	background-color: #abaecc;
+	color: #050617;
 }
 /* NAV LINK */
 nav a {
 	padding: 10px 20px;
+	float: left;
+	display: block;
+	color:#cccff0;
 }
 /* LEFT SIDE LINK*/
 aside a {
