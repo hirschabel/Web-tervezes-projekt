@@ -54,4 +54,33 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.8.-9.3.9 Termékek 
 - Bemenet: nincs
 - Művelet: nyomjuk meg az BUTTON gombot 
 - Elvárt kimenet: A BUTTON nevű szűrési feltételnek megfelelő összes termék megjelenése
+
+## 3. Tesztriportok (TR)
+
+### 3.1. Keresés funkció tesztriportjai
+
+#### 3.1.1. TR-01 (TC-01)
+- TP: TP-01
+    1. lépés: ''-t beírtam
+    2. lépés: a gomb megnyomása megtörtént
+    4. lépés: helytelen redményt kaptam (termékek helye üres lett)
     
+
+#### 3.1.2. TR-02 (TC-02)
+- TP: TP-01
+    1. lépés: 'alma'-t beírtam
+    3. lépés: a gomb megnyomása megtörtént
+    4. lépés: helyes eredményt kaptam (termékek helye üres lett)
+
+#### 3.1.3. TR-03 (TC-03)
+- TP: TP-01
+    1. lépés: 'Tej'-et beírtam
+    3. lépés: a gomb megnyomása megtörtént
+    4. lépés: helyes eredményt kaptam ('Tej' nevű termék jelent meg)
+
+### 3.2. Szűrés funkció tesztriportjai
+
+#### 3.2.1. TR-01 (TC-01)
+- TP: TP-02
+    1. lépés: 'Hus' gombot megnyomtam
+    2. lépés: helyes eredményt kaptam (Az összes hús termék megjelent)
