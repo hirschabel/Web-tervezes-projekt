@@ -100,7 +100,7 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.11. Kosár, 9.3.13.
 
 ## 3. Tesztriportok (TR)
 
-### 3.3. Kosár funkció tesztriportjai
+### 3.1. Kosár funkció tesztriportjai
 
 #### 3.1.1. TR-01 (TC-01)
 - TP: TP-01
@@ -122,7 +122,7 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.11. Kosár, 9.3.13.
 	1. lépés: Az egyik kosárban lévő termékhez tartozó 'Törlés' gombra kattintottam
     2. lépés: Helyes eredményt kaptam (A kosárban lévő termék eltűnt, a végösszeg helyesen csökkent)
 
-### 3.1. Email funkció tesztriportjai
+### 3.3. Email funkció tesztriportjai
 
 #### 3.3.1. TR-01 (TC-01)
 - TP: TP-01
