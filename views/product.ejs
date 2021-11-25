@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Webshop</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<h2>Webshop</h2>
+		</header>
+		<nav>
+			<a href="/">Termékek</a>
+			<a href="/payment">Kosár</a>
+			<a>Kijelentkezés</a>
+			<!-- ha user akkor csak logout + admin linkje -->
+		</nav>
+		<section>
+			<aside></aside>
+			<article>
+				<table id="product_table">
+                    <tr>
+                        <td rowspan="2"><image src="../image/product/<%= termek.kep%>" alt="<%=termek.nev%>" width="180" height="180"></image></td>
+                        <td><%=termek.nev%></td>
+                        <td class="kihagy"></td>
+                        <td><%=termek.ar%> Ft</td>
+                        <td><button onclick="location.href='/kosarba/<%= termek.nev%>'" id="kosar">Kosárba</button></td>
+                    </tr>
+                    <tr >
+                        <td class="kihagy"></td>
+                        <td colspan="2" class="kihagy"></td>
+                        <td><button onclick="location.href='/product-update/<%= termek.nev%>'">Módosítás</button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="5">Termék leírás
+                            <ul>
+                                <li><%=termek.leiras%></li>
+                            </ul>
+                        </td>
+                    </tr>
+                </table>
+			</article>
+		</section>
+		<footer></footer>
+  	</body>
+</html>

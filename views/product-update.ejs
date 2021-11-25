@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Webshop</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<h2>Webshop</h2>
+		</header>
+		<nav>
+			<a href="/">Termékek</a>
+			<a href="/payment">Kosár</a>
+			<a>Kijelentkezés</a>
+			<!-- ha user akkor csak logout + admin linkje 
+			
+			-->
+		</nav>
+		<section>
+			<aside></aside>
+			<article>
+				<form action="/update/<%= termek.nev%>" method="post">
+					<p>Ár:</p>
+					<input type="number" name="ar" id="ar" values="új ár" placeholder="<%= termek.ar%>">
+					<br>
+					<p>Leírás:</p>
+					<input type="text" name="leiras" id="leiras" size="100" maxlength="250" values="új leírás" placeholder="<%= termek.leiras%>">
+					<br>
+					<p>Kép neve:</p>
+					<input type="text" name="kep" id="kep" size="20" maxlength="250" values="új kép neve" placeholder="<%= termek.kep%>">
+					<br>
+					<button type="submit" class="btn-sm btn-dark details">Mentés</button>
+				</form>
+				<form action="/delete/<%= termek.nev %>" method="post">
+					<button class="btn-sm btn-dark details" value="delete">Töröl</button></a>
+				 </form>
+			</article>
+		</section>
+		<footer></footer>
+  	</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Webshop</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<header>
+			<h2>Webshop</h2>
+		</header>
+		<nav>
+			<a href="/">Termékek</a>
+			<a href="/payment">Kosár</a>
+			<a href="/register">Regisztráció</a>
+			<a href="/login">Bejelentkezés</a>
+			<a href="/backup">Biztonsági Mentés</a>
+			<!-- ha user akkor csak logout + admin linkje -->
+		</nav>
+		<section>
+			<aside>
+				<form action="/search" method="post">
+					<input type="text" name="nev">
+					<button type="submit">Keresés</button>
+				</form>
+				<hr>
+				<ul>
+					<% for (const tag of tagek) { %>
+						<li><a href="/filter/<%= tag.nev%>"><%= tag.nev%></a></li>
+					<% } %>
+				</ul>
+			</aside>
+			<article>
+				<% for (const termek of termekek) { %>
+					<div onclick="location.href='/product/<%= termek.nev%>'">
+						<image src="../image/product/<%= termek.kep%>" alt="<%= termek.nev%>" width="180" height="180" onerror="this.src='../image/product/product.jpg';"></image>
+						<p class="name"><%= termek.nev%></p>
+						<p class="price"><%= termek.ar%> Ft</p>
+					</div>
+				<% } %>
+			</article>
+		</section>
+		<footer></footer>
+  	</body>
+</html>

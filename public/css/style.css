@@ -1,0 +1,152 @@
+/*
+#050617 - dark blue
+#e6e7f0 - white
+#cccff0 - not so white
+#abaecc - grey
+*/
+/* HTML */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+/* HEADER */
+header {
+	background-color: #e6e7f0;
+	text-align: center;
+	padding: 50px 0px;
+}
+/* TOP NAV */
+nav {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background-color: #050617;
+	padding: 10px 0px;
+	overflow: hidden;
+
+}
+/* */
+section {
+	display: -webkit-flex;
+	display: flex;
+}
+/* EVERY LINK */
+a {
+	text-decoration: none;
+	color: #050617;
+}
+a:hover {
+	background-color: #abaecc;
+	color: #050617;
+}
+/* NAV LINK */
+nav a {
+	padding: 10px 20px;
+	float: left;
+	display: block;
+	color:#cccff0;
+}
+/* LEFT SIDE LINK*/
+aside a {
+	display:block;
+	padding:6px 1px 3px 16px;
+}
+aside a:hover {
+	background-color: #abaecc;
+}
+/* LEFT NAV */
+aside {
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	background-color:#cccff0;
+}
+aside form {
+	text-align: center;
+	padding: 10px 0;
+}
+/* RIGHT SIDE*/
+article {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	flex: 6;
+	background-color: #ECECEC;
+	padding: 10px;
+}
+/* PRODUCT BOX*/
+article div {
+	border-width: 1px;
+	border-style: solid;
+	margin: 5px;
+	background-color: #e6e7f0;
+	text-align: center;
+	display:inline-block;
+	width:200px;
+	height:240px;
+	cursor: pointer;
+}
+
+article div p {
+	margin: 5px 0px;
+}
+
+article div img {
+	margin-top: 5px;
+}
+/* PAYMENT */
+h3 {
+	margin: 10px 0px 3px 0px;
+}
+/* PAYMENT LIST */
+table, th, td {
+	border: 1px solid;
+	border-collapse: collapse;
+}
+th, td {
+	padding: 0px 10px 0px 10px;
+	text-align: center;
+}
+td:nth-child(1) {
+	text-align: initial;
+}
+/* FOOTER */
+footer {
+	background-color:#050617;
+	padding: 10px;
+}
+/* EVERY BUTTON */
+button {
+	border: none;
+	text-decoration: none;
+	margin-top: 5px;
+	background-color: #3de066;
+	padding: 10px 20px;
+}
+button:hover {
+	border: none;
+	text-decoration: none;
+	background-color: #1ec949;
+}
+/* Responsive layout - makes the menu and the content (inside the section) sit on top of each other instead of next to each other */
+@media (max-width: 600px) {
+	section {
+	  	-webkit-flex-direction: column;
+	  	flex-direction: column;
+	}
+}
+
+#product_table, #product_table tr, #product_table td, #product_table li {
+	border-style: hidden;
+	list-style-type: none;
+	text-align: left;
+}
+
+.kihagy {
+	width: 800px;
+}
+
+#kosar {
+	height: 50px;
+}

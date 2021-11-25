@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Webshop</title>
+		<link href="/css/style.css" rel="stylesheet" type="text/css">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<%if(typeof uzenet !== "string") {
+			uzenet = "";
+		}%>
+	</head>
+	<body>
+		<header>
+			<h2>Webshop</h2>
+		</header>
+		<nav>
+			<a href="/">Termékek</a>
+			<a href="/payment">Kosár</a>
+			<a href="/register">Regisztráció</a>
+		</nav>
+		<section>
+			<aside></aside>
+			<article>
+				<h2>Belépés</h2>
+				<p><%= uzenet%></p>
+				<form action="/login" method="post">
+					<label>Név:
+						<input type="text" id="name" name="name"></input>
+					</label></br>
+					<label>Jelszó:
+						<input type="password" id="password" name="password"></input>
+					</label></br>
+					<button type="submit">Belépés</button>
+				</form>
+			</article>
+		</section>
+		<footer></footer>
+  	</body>
+</html>
