@@ -59,3 +59,15 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.4, 9.3.5 és 9.3.15
 - Az alkalmazás `config` mappájában a dump.sql fájl frissül
 - Az alkalmazás visszalép a főoldalra
 - A mentést betölti az alkalmazás
+
+## 3. Tesztriportok (TR)
+
+### 3.1. Biztonsági mentés funkció tesztriportjai
+
+#### 3.1.1. TR-01 (TC-01)
+- TP: TP-01
+    1. lépés: Megnyitottam a főoldalt
+    2. lépés: Rákattintottam a gombra
+    3. lépés: Az oldal elkezd tölteni
+	4. lépés: Abbahagyja és a biztonsági mentés helyesen lefutott
+
