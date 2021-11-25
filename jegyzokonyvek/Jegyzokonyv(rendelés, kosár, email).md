@@ -100,7 +100,7 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.11. Kosár, 9.3.13.
 
 ## 3. Tesztriportok (TR)
 
-### 3.1. Email funkció tesztriportjai
+### 3.3. Email funkció tesztriportjai
 
 #### 3.3.1. TR-01 (TC-01)
 - TP: TP-01
