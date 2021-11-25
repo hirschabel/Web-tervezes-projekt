@@ -67,13 +67,13 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.8.-9.3.9 Termékek 
     
 
 #### 3.1.2. TR-02 (TC-02)
-- TP: TP-01
+- TP: TP-02
     1. lépés: 'alma'-t beírtam
     3. lépés: a gomb megnyomása megtörtént
     4. lépés: helyes eredményt kaptam (termékek helye üres lett)
 
 #### 3.1.3. TR-03 (TC-03)
-- TP: TP-01
+- TP: TP-03
     1. lépés: 'Tej'-et beírtam
     3. lépés: a gomb megnyomása megtörtént
     4. lépés: helyes eredményt kaptam ('Tej' nevű termék jelent meg)
@@ -81,6 +81,6 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.8.-9.3.9 Termékek 
 ### 3.2. Szűrés funkció tesztriportjai
 
 #### 3.2.1. TR-01 (TC-01)
-- TP: TP-02
+- TP: TP-01
     1. lépés: 'Hus' gombot megnyomtam
     2. lépés: helyes eredményt kaptam (Az összes hús termék megjelent)
