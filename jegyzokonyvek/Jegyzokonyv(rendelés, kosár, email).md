@@ -118,4 +118,4 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.11. Kosár, 9.3.13.
     2. lépés: Rámentem a kosár gombra
 	3. lépés: Megnyomtam a megrendeles gombot
 	4. lépés: Visszadobott a főoldalra, nem kaptam hibaüzenetet
-    3. lépés: Email nem jött meg, ez hibás működés
+    3. lépés: Email megjött, nem volt benne semmi, ez hibás kimenet
