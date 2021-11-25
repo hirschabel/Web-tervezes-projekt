@@ -18,7 +18,10 @@
 |  1.2   |  Hirsch Ábel             |  2021-10-20  |  Előterjesztés  |  A projekt menedzsere jónak találta                           |
 |  2.0   |  Mindenki                |  2021-10-22  |  Elfogadott     |  Apróbb átszervezések a kommentek alapján                     |
 |  2.1   |  Mindenki                |  2021-11-01  |  Tervezet       |  Weboldal elkészítése                                         |
-|  2.1   |  Mindenki                |  2021-11-11  |  Előterjesztés  |  Jegyzőkönyvek elkészítése                                    |
+|  2.2   |  Mindenki                |  2021-11-11  |  Előterjesztés  |  Jegyzőkönyvek elkészítése                                    |
+|  3.0   |  Mindenki                |  2021-11-12  |  Elfogadott     |  Apróbb átszervezések a kommentek alapján                     |
+|  3.1   |  Mindenki                |  2021-11-25  |  Tervezet       |  Funkciók megírása           		                         |
+|  3.2   |  Mindenki                |  2021-11-25  |  Előterjesztés  |  Tesztesetek elkészítése                                      |
 
 
 Státusz osztályozás:
@@ -165,6 +168,12 @@ A projekt hetente ülésezik, hogy megvitassák az azt megelőző hét problém�
  - Hely: Koli szoba
  - Résztvevők: Hirsch Ábel, Pető Patrik, Honti Szabolcs
  - Érintett témák: Negyedik mérföldkő átbeszélése, feladatok tisztázása
+
+10. megbeszélés:
+ - Időpont: 2021.11.25.
+ - Hely: Online
+ - Résztvevők: Tóth János, Hirsch Ábel, Pető Patrik, Honti Szabolcs
+ - Érintett témák: Negyedik mérföldkőről való beszélgetés és utolsó simítások
 
 
 ### 7.3. Minőségbiztosítás
