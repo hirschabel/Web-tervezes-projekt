@@ -97,3 +97,25 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.11. Kosár, 9.3.13.
 - Bemenet: kosárban nincs egy termék sem
 - Művelet: nyomjuk meg az Megrendelem gombot 
 - Elvárt kimenet: hiba, üres kosárral nem lehet rendelni: email elküldve a címre a kosár tartalmával (még ha a kosár üres is)
+
+## 3. Tesztriportok (TR)
+
+### 3.1. Email funkció tesztriportjai
+
+#### 3.1.1. TR-01 (TC-01)
+- TP: TP-01
+	1. lépés: Megnyitottam a főoldalt
+	2. lépés: Rámentem a fakanál termékre
+    3. lépés: Kosárba raktam a fakanál terméket
+    4. lépés: Rámentem a kosár gombra
+    5. lépés: Megnyomtam a megrendelés gombot
+    6. lépés: Az email megjött és benne van a kosár tartalma
+    
+
+#### 3.1.2. TR-02 (TC-02)
+- TP: TP-01
+    1. lépés: Megnyitottam a főoldalt
+    2. lépés: Rámentem a kosár gombra
+	3. lépés: Megnyomtam a megrendeles gombot
+	4. lépés: Visszadobott a főoldalra, nem kaptam hibaüzenetet
+    3. lépés: Email nem jött meg, ez hibás működés
