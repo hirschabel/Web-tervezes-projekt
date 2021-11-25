@@ -69,5 +69,5 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.4, 9.3.5 és 9.3.15
     1. lépés: Megnyitottam a főoldalt
     2. lépés: Rákattintottam a gombra
     3. lépés: Az oldal elkezd tölteni
-	4. lépés: Abbahagyja és a biztonsági mentés helyesen lefutott
+	4. lépés: Helyes eredményt kaptam (abbahagyja a töltést és a biztonsági mentés helyesen lefut a háttérben)
 

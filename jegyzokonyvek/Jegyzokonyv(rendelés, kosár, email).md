@@ -131,7 +131,7 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.11. Kosár, 9.3.13.
     3. lépés: Kosárba raktam a fakanál terméket
     4. lépés: Rámentem a kosár gombra
     5. lépés: Megnyomtam a megrendelés gombot
-    6. lépés: Az email megjött és benne van a kosár tartalma
+    6. lépés: Helyes eredményt kaptam (Az email megjött és benne van a kosár tartalma)
     
 #### 3.3.2. TR-02 (TC-02)
 - TP: TP-01
@@ -139,4 +139,4 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.11. Kosár, 9.3.13.
     2. lépés: Rámentem a kosár gombra
 	3. lépés: Megnyomtam a megrendeles gombot
 	4. lépés: Visszadobott a főoldalra, nem kaptam hibaüzenetet
-    3. lépés: Email megjött, nem volt benne semmi, ez hibás kimenet
+    3. lépés: Helytelen működés (Email megjött, nem volt benne semmi, ez hibás kimenet)
