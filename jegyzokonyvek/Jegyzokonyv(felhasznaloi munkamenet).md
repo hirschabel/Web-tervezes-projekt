@@ -1,6 +1,6 @@
 # Tesztjegyzőkönyv-Felhasználói munkamenet
 
-Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.4.3 korábbi hiányzó funkciókhoz(felhasználói munkamenet) készült. Felelőse: Honti Szabolcs
+Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.4.3 korábbi hiányzó funkciókhoz(felhasználói munkamenet, felhasználói adatmódosítás) készült. Felelőse: Honti Szabolcs
 
 ## 1. Teszteljárások (TP)
 
@@ -29,6 +29,20 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.4.3 korábbi hiányz�
     4. lépés: Nyomjuk meg a 'Bejelentkezés' gombot
     5. lépés: Ellenőrizzük az eredményt. Elvárt eredmény: sikeres bejelentkezés
 
+### 1.3 Felhasználói adatmódosítás
+- Azonosító: TP-03
+- TEsztesetek: TC-06
+- Leírás: felhasználói adatmódosítás funkció tesztelése
+    0. lépés: Nyissuk meg az főoldalt
+    1. lépés: Navigáljunk a Bejelentkezés fülre
+    2. lépés: Lépjünk be a felhasználónkba
+    3. lépés: Navigáljunk a Profil oldalra
+    4. lépés: Írjuk az INPUT1 mezőbe a TEXT1 szöveget
+    5. lépés: Írjuk az INPUT2 mezőbe a TEXT2 szöveget
+    6. lépés: Írjuk az INPUT3 mezőbe a TEXT3 szöveget
+    7. lépés: Nyomjuk meg a 'Mentés' gombot
+    8. lépés: Ellenőrizzük az eredményt. Elvárt eredmény: sikeres adatmódosítás
+
 ## 2. Tesztesetek (TC)
 
 ### 2.1. Regisztráció funkció tesztesetei
@@ -56,19 +70,28 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.4.3 korábbi hiányz�
 - Művelet: nyomjuk meg a Belépés gombot 
 - Elvárt kimenet: Átnavigál a főoldalra és a felhasználó számára elérhető oldalak(pl.:Kosár) megjelennek
 
-#### 2.2.1. TC-04
+#### 2.2.2. TC-04
 - TP: TP-02
 - Leírás: bejelentkezés funkció tesztelése 
 - Bemenet: TEXT1='' TEXT2='jelszó'
 - Művelet: nyomjuk meg a Belépés gombot 
 - Elvárt kimenet: Sikertelen bejelentkezés!
 
-#### 2.2.1. TC-05
+#### 2.2.3. TC-05
 - TP: TP-02
 - Leírás: bejelentkezés funkció tesztelése 
 - Bemenet: TEXT1='név' TEXT2=''
 - Művelet: nyomjuk meg a Belépés gombot 
 - Elvárt kimenet: Sikertelen bejelentkezés!
+
+### 2.3. Felhasználói adatmódosítás funkció tesztesetei
+
+#### 2.3.1. TC-06
+- TP: TP-03
+- Leírás: felhasználói adatmódosítás funkció tesztelése 
+- Bemenet: TEXT1='titkosJelszó' TEXT2='újLakcím' TEXT3='ujemail@gmail.com'
+- Művelet: nyomjuk meg a Mentés gombot 
+- Elvárt kimenet: Sikeres adatmódosítás!
 
 ## 3. Tesztriportok (TR)
 
@@ -89,4 +112,7 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.4.3 korábbi hiányz�
     4. lépés: helyes eredményt kaptam (A név nevű felhasználó már létezik! és az adatok nem felkerültek az adatbázisba)
     
 ### 3.2. Bejelentkezés funkció tesztriportjai
-a bejelentkezés nem lett megvalósítva
+a bejelentkezés funkció nem lett megvalósítva
+
+### 3.3. Felhasználói adatmódosítás funkció tesztriportjai
+a felhasználói adatmódosítás funkció nem lett megvalósítva
