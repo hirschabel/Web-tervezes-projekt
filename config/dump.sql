@@ -30,7 +30,8 @@ CREATE TABLE public.felhasznalo (
     szuldatum date NOT NULL,
     lakcim character varying(100) NOT NULL,
     email character varying(100) NOT NULL,
-    admin boolean DEFAULT false
+    admin boolean DEFAULT false,
+    jelszo character varying(16)
 );
 
 
@@ -63,8 +64,9 @@ ALTER SEQUENCE public.felhasznalo_id_seq OWNED BY public.felhasznalo.id;
 --
 
 CREATE TABLE public.kosar (
-    rendeles_id integer,
-    kosartartalom character varying(1000)
+    felh_id integer NOT NULL,
+    termek_nev character varying(500) NOT NULL,
+    darab integer NOT NULL
 );
 
 
@@ -76,7 +78,9 @@ ALTER TABLE public.kosar OWNER TO xxfbwwgpetfubp;
 
 CREATE TABLE public.rendeles (
     id integer NOT NULL,
-    osszeg integer
+    felh_id integer NOT NULL,
+    szall_cim character varying(500) NOT NULL,
+    vegosszeg integer NOT NULL
 );
 
 
@@ -102,6 +106,42 @@ ALTER TABLE public.rendeles_id_seq OWNER TO xxfbwwgpetfubp;
 --
 
 ALTER SEQUENCE public.rendeles_id_seq OWNED BY public.rendeles.id;
+
+
+--
+-- Name: rendelt_kosar; Type: TABLE; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+CREATE TABLE public.rendelt_kosar (
+    uniq integer NOT NULL,
+    rendeles_id integer NOT NULL,
+    termek_nev character varying(500) NOT NULL,
+    darab integer NOT NULL
+);
+
+
+ALTER TABLE public.rendelt_kosar OWNER TO xxfbwwgpetfubp;
+
+--
+-- Name: rendelt_kosar_uniq_seq; Type: SEQUENCE; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+CREATE SEQUENCE public.rendelt_kosar_uniq_seq
+    AS integer
+    START WITH 1
+    INCREMENT BY 1
+    NO MINVALUE
+    NO MAXVALUE
+    CACHE 1;
+
+
+ALTER TABLE public.rendelt_kosar_uniq_seq OWNER TO xxfbwwgpetfubp;
+
+--
+-- Name: rendelt_kosar_uniq_seq; Type: SEQUENCE OWNED BY; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+ALTER SEQUENCE public.rendelt_kosar_uniq_seq OWNED BY public.rendelt_kosar.uniq;
 
 
 --
@@ -202,6 +242,13 @@ ALTER TABLE ONLY public.rendeles ALTER COLUMN id SET DEFAULT nextval('public.ren
 
 
 --
+-- Name: rendelt_kosar uniq; Type: DEFAULT; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+ALTER TABLE ONLY public.rendelt_kosar ALTER COLUMN uniq SET DEFAULT nextval('public.rendelt_kosar_uniq_seq'::regclass);
+
+
+--
 -- Name: tag_kapcs uniq; Type: DEFAULT; Schema: public; Owner: xxfbwwgpetfubp
 --
 
@@ -219,16 +266,19 @@ ALTER TABLE ONLY public.tagek ALTER COLUMN id SET DEFAULT nextval('public.tagek_
 -- Data for Name: felhasznalo; Type: TABLE DATA; Schema: public; Owner: xxfbwwgpetfubp
 --
 
-COPY public.felhasznalo (id, nev, szuldatum, lakcim, email, admin) FROM stdin;
-1	Kiss B‚la	2000-01-01	Szeged, Kerepes utca 13.	kissb@citromail.hu	f
-2	Lakatos Emoke	1999-10-12	Szeged, Hídalatt 12.	lakatemo@gmail.hu	f
-3	Lakatos Béla	1999-10-12	Szeged, Hídalatt 12.	lakatemo@gmail.hu	f
-4	Honti Szabolcs	2001-02-15	Soltvadkert, M ty s kir ly Łt 88.	honti.szabolcs123@gmail.com	t
-5	default	2000-01-01	_	_	f
-6	admin	2000-01-01	_	_	t
-7	Pet‹ Patrik	2001-09-11	U.S., 1600 Pennsylvania Avenue NW, Washington, D.C. 20500	patrik.peto43@gmail.com	t
-8	T˘th J nos	2000-10-06	Szeged kukovetz Nana utca 13 2/5	janos.toth.2000@gmail.com	t
-9	Hirsch µbel	2001-07-07	Szeged, utca lak˘	hirschabel@gmail.com	t
+COPY public.felhasznalo (id, nev, szuldatum, lakcim, email, admin, jelszo) FROM stdin;
+1	Kiss B‚la	2000-01-01	Szeged, Kerepes utca 13.	kissb@citromail.hu	f	\N
+2	Lakatos Emoke	1999-10-12	Szeged, Hídalatt 12.	lakatemo@gmail.hu	f	\N
+3	Lakatos Béla	1999-10-12	Szeged, Hídalatt 12.	lakatemo@gmail.hu	f	\N
+20	név	2001-08-26	Salgótarján	email@gmail.com	f	jelszó
+4	Honti Szabolcs	2001-02-15	Soltvadkert, M ty s kir ly Łt 88.	honti.szabolcs123@gmail.com	t	\N
+5	default	2000-01-01	_	_	f	\N
+6	admin	2000-01-01	_	_	t	\N
+7	Pet‹ Patrik	2001-09-11	U.S., 1600 Pennsylvania Avenue NW, Washington, D.C. 20500	patrik.peto43@gmail.com	t	\N
+8	T˘th J nos	2000-10-06	Szeged kukovetz Nana utca 13 2/5	janos.toth.2000@gmail.com	t	\N
+9	Hirsch µbel	2001-07-07	Szeged, utca lak˘	hirschabel@gmail.com	t	\N
+21		2001-02-23	Salgótarján	email@gmail.com	f	asd
+19	teszt	2021-11-03	ASD	asdasdas@asd.com	f	asdasd
 \.
 
 
@@ -236,7 +286,7 @@ COPY public.felhasznalo (id, nev, szuldatum, lakcim, email, admin) FROM stdin;
 -- Data for Name: kosar; Type: TABLE DATA; Schema: public; Owner: xxfbwwgpetfubp
 --
 
-COPY public.kosar (rendeles_id, kosartartalom) FROM stdin;
+COPY public.kosar (felh_id, termek_nev, darab) FROM stdin;
 \.
 
 
@@ -244,7 +294,53 @@ COPY public.kosar (rendeles_id, kosartartalom) FROM stdin;
 -- Data for Name: rendeles; Type: TABLE DATA; Schema: public; Owner: xxfbwwgpetfubp
 --
 
-COPY public.rendeles (id, osszeg) FROM stdin;
+COPY public.rendeles (id, felh_id, szall_cim, vegosszeg) FROM stdin;
+32	5	Lakcím	524
+33	5	Lakcím	0
+20	5	Lakcím	7200
+21	5	Lakcím áéőúű abc	0
+22	5	Lakcím áéőúó abc	0
+23	5	Lakcím	2800
+24	5	Lakcím	250
+34	5	Lakcím	500
+35	5	Lakcím	0
+36	5	Lakcím	0
+37	5	Lakcím	0
+38	5	Lakcím	0
+39	5	Lakcím	0
+40	5	Lakcím	0
+25	5	Lakcím	1572
+26	5	Lakcím	1572
+27	5	Lakcím	1048
+28	5	Lakcím	1228
+29	5	Lakcím	524
+30	5	Lakcím	569
+31	5	Lakcím	250
+41	5	Lakcím	0
+42	5	Lakcím	524
+\.
+
+
+--
+-- Data for Name: rendelt_kosar; Type: TABLE DATA; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+COPY public.rendelt_kosar (uniq, rendeles_id, termek_nev, darab) FROM stdin;
+63	32	Fakanal	1
+53	23	Csirkemell	2
+54	24	Tej	1
+55	25	Fakanal	3
+56	27	Fakanal	2
+57	28	Brokkoli	1
+58	28	Krumpli	1
+59	28	Tej	2
+60	29	Fakanal	1
+61	30	Brokkoli	1
+62	31	Tej	1
+64	34	Tej	2
+65	42	Fakanal	1
+51	20	Csirkemell	4
+52	20	Vaj	4
 \.
 
 
@@ -307,8 +403,6 @@ COPY public.tagek (id, nev) FROM stdin;
 --
 
 COPY public.termek (nev, ar, leiras, kep) FROM stdin;
-Csirkemell	1400	Friss falusi csirkemell	csirkemell.jpg
-Vaj	400	Friss magyar vaj	vaj.png
 Fakanal	524	Tobb meretu es formaju fakanal	fakanal.jpg
 Tej	250	Egy doboz friss termeloi tej	tej.jpg
 Brokkoli	569	Frissen szedett brokkoli	brokkoli.jpg
@@ -327,7 +421,6 @@ Csont Nelkuli Sertes Karaj	1399	Sertes karaj kizarolag magyar sertesekbol	karaj.
 Marha Belszin	1899	Marha belszin premium minosogben	belszin.jpg
 Nyaloka	79	Nyaloka tobb izben	nyaloka.jpg
 Jegkrem	269	Jegkrem tobb izben	jegkrem.jpg
-Cordon Bleu	1299	1kg (8 db) Sajtal-Sonkaval toltott pulyka medalion	cordonbleu.jpg
 Gyorsfagyasztott Burgonya	499	1kg sutni valo gyorsfagyasztott krumpli	sultkrumpli.jpg
 Voros Hagyma	199	Termeloi voros hagyma	hagyma.jpg
 Fejes Salata	359	Frissen szedett fejes salata	salata.jpg
@@ -345,6 +438,9 @@ Buzadara	339	Buzadara	buzadara.jpg
 Cukor	315	Magyar kristaly cukor	cukor.jpg
 Etkeszlet	5669	16 db-os etkeszlet	etkeszlet.jpg
 Banan	429	Mexikoi banan	banan.jpg
+Csirkemell	1300	Friss csirkemell	csirkemell.jpg
+Cordon Bleu	1000	Cordon Bleu	cordonbleu.jpg
+Vaj	400	Falusi magyar vaj	vaj.png
 \.
 
 
@@ -352,14 +448,21 @@ Banan	429	Mexikoi banan	banan.jpg
 -- Name: felhasznalo_id_seq; Type: SEQUENCE SET; Schema: public; Owner: xxfbwwgpetfubp
 --
 
-SELECT pg_catalog.setval('public.felhasznalo_id_seq', 2, true);
+SELECT pg_catalog.setval('public.felhasznalo_id_seq', 21, true);
 
 
 --
 -- Name: rendeles_id_seq; Type: SEQUENCE SET; Schema: public; Owner: xxfbwwgpetfubp
 --
 
-SELECT pg_catalog.setval('public.rendeles_id_seq', 1, false);
+SELECT pg_catalog.setval('public.rendeles_id_seq', 42, true);
+
+
+--
+-- Name: rendelt_kosar_uniq_seq; Type: SEQUENCE SET; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+SELECT pg_catalog.setval('public.rendelt_kosar_uniq_seq', 65, true);
 
 
 --
@@ -385,11 +488,27 @@ ALTER TABLE ONLY public.felhasznalo
 
 
 --
+-- Name: kosar kosar_pkey; Type: CONSTRAINT; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+ALTER TABLE ONLY public.kosar
+    ADD CONSTRAINT kosar_pkey PRIMARY KEY (felh_id, termek_nev);
+
+
+--
 -- Name: rendeles rendeles_pkey; Type: CONSTRAINT; Schema: public; Owner: xxfbwwgpetfubp
 --
 
 ALTER TABLE ONLY public.rendeles
     ADD CONSTRAINT rendeles_pkey PRIMARY KEY (id);
+
+
+--
+-- Name: rendelt_kosar rendelt_kosar_pkey; Type: CONSTRAINT; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+ALTER TABLE ONLY public.rendelt_kosar
+    ADD CONSTRAINT rendelt_kosar_pkey PRIMARY KEY (uniq);
 
 
 --
@@ -417,11 +536,43 @@ ALTER TABLE ONLY public.termek
 
 
 --
--- Name: kosar kosar_rendeles_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: xxfbwwgpetfubp
+-- Name: kosar kosar_felh_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: xxfbwwgpetfubp
 --
 
 ALTER TABLE ONLY public.kosar
-    ADD CONSTRAINT kosar_rendeles_id_fkey FOREIGN KEY (rendeles_id) REFERENCES public.rendeles(id);
+    ADD CONSTRAINT kosar_felh_id_fkey FOREIGN KEY (felh_id) REFERENCES public.felhasznalo(id);
+
+
+--
+-- Name: kosar kosar_termek_nev_fkey; Type: FK CONSTRAINT; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+ALTER TABLE ONLY public.kosar
+    ADD CONSTRAINT kosar_termek_nev_fkey FOREIGN KEY (termek_nev) REFERENCES public.termek(nev);
+
+
+--
+-- Name: rendeles rendeles_felh_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+ALTER TABLE ONLY public.rendeles
+    ADD CONSTRAINT rendeles_felh_id_fkey FOREIGN KEY (felh_id) REFERENCES public.felhasznalo(id);
+
+
+--
+-- Name: rendelt_kosar rendelt_kosar_rendeles_id_fkey; Type: FK CONSTRAINT; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+ALTER TABLE ONLY public.rendelt_kosar
+    ADD CONSTRAINT rendelt_kosar_rendeles_id_fkey FOREIGN KEY (rendeles_id) REFERENCES public.rendeles(id);
+
+
+--
+-- Name: rendelt_kosar rendelt_kosar_termek_nev_fkey; Type: FK CONSTRAINT; Schema: public; Owner: xxfbwwgpetfubp
+--
+
+ALTER TABLE ONLY public.rendelt_kosar
+    ADD CONSTRAINT rendelt_kosar_termek_nev_fkey FOREIGN KEY (termek_nev) REFERENCES public.termek(nev);
 
 
 --

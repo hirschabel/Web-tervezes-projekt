@@ -160,4 +160,8 @@ router.get('/backup', async (req, res) => {
 	res.redirect('/');
 });
 
+router.get('/download', async (req, res) => {
+	res.download(__dirname + '/../config/dump.sql', 'dump.sql');
+});
+
 module.exports = router;
