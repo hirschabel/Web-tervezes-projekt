@@ -16,15 +16,15 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.4, 9.3.5 és 9.3.15
 - Tesztesetek: TC-01
 - Leírás: Megjeleníti a kiválasztott termék lapját, és azt tudjuk módosítani
 	1. A kiválaszott termékre rákattintva megnyitja az adot termék oldalát
-	2. A `Módosítás` gombbal megnyitjuk a módosító oldalt
+	2. A Módosítás gombbal megnyitjuk a módosító oldalt
 
 ### 1.3 Biztonsági mentés tesztelése
 - Azonosító: TP-03
 - Tesztesetek: TC-01
 - Leírás: Biztonsági mentés készítése
-	1. A `Biztonsági mentés` gomb megnyomásával készíthetünk egy biztonsági mentést az alkalmazásunkról
+	1. A Biztonsági mentés gomb megnyomásával készíthetünk egy biztonsági mentést az alkalmazásunkról
 	2. Visszavisz a termékek oldalra (főoldal)
-	3. A biztonsági mentés egy dump.sql nevű SQL adatbázisként menti el a `config` mappába
+	3. A biztonsági mentés egy dump.sql nevű SQL adatbázisként menti el a config mappába
 	4. Ezt a mentést automatikusan beállítja a biztonsági mentés után
 
 # 2. Tesztesetek (TC)
@@ -55,8 +55,8 @@ Az alábbi tesztdokumentum a Webshop projekthez tartozó 9.3.4, 9.3.5 és 9.3.15
 ### 2.3.1 TC-01
 -TP: TP-03
 -Leírás: Biztonsági mentés készítése
-- A `Biztonsági mentés` gombra kattintva készül egy biztonsági mentés
-- Az alkalmazás `config` mappájában a dump.sql fájl frissül
+- A Biztonsági mentés gombra kattintva készül egy biztonsági mentés
+- Az alkalmazás config mappájában a dump.sql fájl frissül
 - Az alkalmazás visszalép a főoldalra
 - A mentést betölti az alkalmazás
 
